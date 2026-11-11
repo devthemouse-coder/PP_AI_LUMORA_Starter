@@ -1,0 +1,16 @@
+@baseUrl = http://127.0.0.1:5080
+
+### 로컬 Provider 실시간 상태
+GET {{baseUrl}}/api/llm/status
+
+### Ollama 버전
+GET {{baseUrl}}/api/llm/version
+
+### 로컬 설치 모델
+GET {{baseUrl}}/api/llm/models
+
+### 설치된 모델 이름 또는 ID로 상태 확인
+GET {{baseUrl}}/api/llm/models/llama3.2%3Alatest
+
+### 미설치 모델도 HTTP 200이며 상태는 NotInstalled
+GET {{baseUrl}}/api/llm/models/synthetic-missing%3Alatest

@@ -1,0 +1,18 @@
+{
+  "app": {
+    "name": "P.P. AI - LUMORA",
+    "description": "Development foundation for a local-first personal AI platform."
+  },
+  "chat": {
+    "title": "Conversation",
+    "history": "Conversation history",
+    "newConversation": "New conversation",
+    "empty": "Try saving or looking up a birthday.",
+    "processing": "The local AI is processing your request...",
+    "messageLabel": "Message",
+    "placeholder": "For example: Hong Gildong's birthday is May 10",
+    "send": "Send",
+    "sendFailed": "The request could not be completed. Please try again.",
+    "historyUnavailable": "Conversation history could not be loaded."
+  }
+}

@@ -1,0 +1,61 @@
+# .NET
+[Bb]in/
+[Oo]bj/
+
+# Frontend
+node_modules/
+dist/
+
+# IDE and user-specific settings
+.vs/
+.vscode/*.local.json
+*.user
+*.suo
+
+# Local databases and SQLite sidecar files
+data/
+keys/
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.sqlite3-journal
+*.lumora-backup
+*.lumora-keys
+backup-status.json
+.backup-status.lock
+*.snapshot
+*.verify
+*.restore
+*.replacement
+*.partial
+
+# Logs, temporary files, and backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Secrets and keys
+.env
+.env.*
+!.env.example
+secrets.json
+secrets.*.json
+appsettings.*.local.json
+*.pem
+*.pfx
+*.p12
+*.key
+*.snk
+*.protected
+*.dpapi

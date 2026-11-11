@@ -1,0 +1,4 @@
+@Lumora.Api_BaseUrl = http://127.0.0.1:5080
+
+GET {{Lumora.Api_BaseUrl}}/api/health
+Accept: application/json

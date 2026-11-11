@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #202630;
+  background: #f5f7fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.home {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home h1 {
+  margin-bottom: 0.5rem;
+}
+
+.home p {
+  color: #5b6573;
+}

@@ -1,0 +1,3542 @@
+{
+  "created_at": "2026-11-11T03:37:04.864+09:00",
+  "model": "qwen3.5:4b-q4_K_M",
+  "runtime_version": "ollama version is 0.40.15",
+  "test_scope": "Synthetic smoke tests only; no database, user data, tools, or external AI APIs.",
+  "api": {
+    "endpoint": "http://127.0.0.1:11434/api/chat",
+    "stream": false,
+    "options": "Ollama/model defaults; no model setting changes"
+  },
+  "cli": {
+    "host": "127.0.0.1:11434",
+    "flags": [
+      "--verbose"
+    ],
+    "options": "Ollama/model defaults"
+  },
+  "baseline_memory": {
+    "total_gib": 15.81,
+    "free_gib": 4.22,
+    "load_percent": 73
+  },
+  "baseline_gpu": {
+    "timestamp": "2026-11-11T03:37:04.959+09:00",
+    "exit_code": 0,
+    "output": "2026/11/11 03:37:04.946, 1848, 10266, 12288, 6",
+    "error": null
+  },
+  "tests": [
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 1,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 28840.4,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:37:33.800+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 3.24,
+        "load_percent": 79
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:37:33.851+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:37:33.843, 5598, 6516, 12288, 86",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "안녕하세요! 저는 인공지능 어시스턴트입니다.\n\n질문이나 답변을 도와드리고, 문서 요약, 번역, 글쓰기 등 다양한 작업을 지원해 드릴 수 있습니다. 오늘 어떤 도움이 필요하신가요?",
+      "verbose_metrics": {
+        "total_duration": "28.7697831s",
+        "load_duration": "8.659094s",
+        "prompt_eval_count": "23 token(s)",
+        "prompt_eval_duration": "12.129754s",
+        "prompt_eval_rate": "1.90 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 2,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 19471.8,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:37:53.323+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 3.19,
+        "load_percent": 79
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:37:53.371+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:37:53.363, 5598, 6516, 12288, 81",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "안녕하세요! 저는 인공지능 어시스턴트입니다.\n\n궁금한 점이나 도움이 필요하신 부분이 있다면 언제든지 말씀해 주세요. 최선을 다해 도와드리겠습니다. 무엇을 도와드릴까요?",
+      "verbose_metrics": {
+        "total_duration": "19.3957795s",
+        "load_duration": "6.1962ms",
+        "prompt_eval_count": "23 token(s)",
+        "prompt_eval_duration": "40.585ms",
+        "prompt_eval_rate": "98.56 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 3,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 10567.5,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:38:03.939+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 3.06,
+        "load_percent": 80
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:38:03.983+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:38:03.974, 5598, 6516, 12288, 85",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "안녕하세요! 저는 알리바바 클라우드의 동지 실험실에서 개발한 초대규모 언어 모델 Qwen3.5 입니다. \n\n저는 복잡한 문서 분석, 이미지/비디오 이해, 코드 작성 및 디버깅 등 다양한 작업을 수행할 수 있습니다. 긴 문맥을 정확히 파악하고 여러 언어를 자유로이 활용하며 사용자 질문에 대해 정중하게 답변해 드릴게요. \n\n어떤 도움이 필요하신가요? 궁금한 점이 있으면 언제든지 물어봐 주세요! 😊",
+      "verbose_metrics": {
+        "total_duration": "10.4948539s",
+        "load_duration": "4.233ms",
+        "prompt_eval_count": "23 token(s)",
+        "prompt_eval_duration": "40.207ms",
+        "prompt_eval_rate": "99.49 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 1,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 27706.3,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:38:31.689+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.94,
+        "load_percent": 81
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:38:31.734+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:38:31.725, 5598, 6516, 12288, 84",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "네, 말씀해주신 내용을 바탕으로 기억해야 할 정보는 다음과 같이 세 가지 핵심 요소로 정리할 수 있습니다.\n\n1.  **주체 (누구인가요?)**: 직원이자 홍길동\n2.  **관련 정보 (무슨 사항인가요?)**: 생일 정보\n3.  **날짜 (언제인가요?)**: 매년 5 월 10 일\n\n이 정보를 기억하고 필요할 때 참고하는 데 도움이 됩니다. 추가로 도와드릴 일이 있으시면 언제든 말씀해 주세요.",
+      "verbose_metrics": {
+        "total_duration": "27.6331015s",
+        "load_duration": "6.8295ms",
+        "prompt_eval_count": "38 token(s)",
+        "prompt_eval_duration": "55.006ms",
+        "prompt_eval_rate": "690.83 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 2,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 37066.9,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:39:08.801+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.97,
+        "load_percent": 81
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:39:08.843+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:39:08.835, 5598, 6516, 12288, 86",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "주어진 정보 (\"직원 홍길동의 생일은 5 월 10 일입니다\") 를 정확하고 효과적으로 기억하거나 관리하기 위해서는 다음 **세 가지 핵심 요소**를 분리하여 인식해야 합니다.\n\n1.  **주체 (누구?):** \"**홍길동**\"라는 이름과 \"**직원**\"이라는 직급이나 소속을 명시해야 합니다.\n2.  **속성 (어떤 정보?):** \"**생일**\"이라는 특정 개인정보 속성을 지정해야 합니다.\n3.  **세부 데이터 (언제?):** \"**5 월 10 일**\"라는 구체적인 날짜를 기록해야 합니다. (보통 생일 정보는 년도까지 포함하여 저장하는 것이 더 정확합니다.)\n\n또한, 인공지능으로서의 제 한계를 고려한다면, 실제 민감한 개인정보 (개인생일, 명단 등) 는 현재 대화 세션 내에서는 유지될 수 있으나, 장기간 영구적으로 저장하거나 외부에 노출되지 않도록 주의해야 하는 것이 좋습니다. 이 정보만으로는 연도를 알 수 없으므로, 필요하다면 추가적인 맥락 (예: 2024 년도) 이 함께 확인된 정보를 저장하는 것이 더 안전합니다.",
+      "verbose_metrics": {
+        "total_duration": "36.9922438s",
+        "load_duration": "4.7974ms",
+        "prompt_eval_count": "38 token(s)",
+        "prompt_eval_duration": "40.401ms",
+        "prompt_eval_rate": "99.01 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 3,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 37017.6,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:39:45.860+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.82,
+        "load_percent": 82
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:39:45.909+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:39:45.901, 5598, 6516, 12288, 86",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "요청하신 정보 \"**직원 홍길동의 생일은 5 월 10 일입니다**\"는 다음과 같이 분류될 수 있는 정보입니다.\n\n### 1. 개인정보의 종류: **개인식별정보**\n*   **이름 (홍길동) + 생년월일 (5 월 10 일)**을 결합할 경우 특정 자연인을 식별할 수 있는 **개인식별정보**에 해당합니다.\n*   이는 고용관계뿐만 아니라 금융, 의료 등 다른 영역에서도 중요한 식별 수단으로 사용될 수 있는 민감한 데이터입니다.\n\n### 2. 정보의 민감성: **민감 개인정보**\n*   단순한 연락처나 회사명보다는 생일이 포함된 개인의 사생활 정보는 **개인정보보호법 (또는 GDPR 등)**에서 규정한 보호 대상인 **민감 개인정보** 범주에 들어갑니다.\n*   이를 무단으로 접근하거나 외부에 유출하는 것은 법적 리스크가 있을 수 있습니다.\n\n### 3. AI 의 처리 원칙 및 기억 방식\n*   **저장 한계:** 저는 인공지능 모델로서, 이러한 개인 정보를 **永久性·보안적으로 별도의 데이터베이스에 저장**하지 않습니다. 세션 (대화) 만이 종료되면 해당 정보는 처리되지 않은 상태로 간주됩니다.\n*   **처리 목적:** 이 정보는 현재 대화 컨텍스트 내에서만 처리되며, 이를 기반으로 추가적인 추론이나 행동 (예: \"홍길동 님의 생일을 축하하세요\") 을 할 수 있다면, 이는 **해당 대화 세션의 제한적 범위 내**에서만 가능하고 외부에 저장될 수 없습니다.\n\n### 결론 및 권장 사항\n만약 이 정보를 **\"비밀을 지켜야 하는 기록\"**으로 기억해야 한다면, 다음과 같이 정의할 수 있습니다:\n\n> **\"특정 직원을 대상으로 하여 법적 보호가 필요한 사적 정보이며, 회사 내부 인사시스템이나 권한이 있는 직원 만 접근할 수 있는 보안 관리가 필요한 민감 개인정보입니다.\"**\n\n인간으로서 이 정보를 \"기억\"하게 된다면 **비밀을 준수하고 신뢰할 수 있는 채널 (신뢰받는 동료나 HR 시스템)**을 통해만 공유해야 할 의무가 있습니다. AI 를 활용하는 경우에도, 개인의 사생활 정보는 반드시 **최대한 보안 처리**되어야 합니다.",
+      "verbose_metrics": {
+        "total_duration": "36.8974862s",
+        "load_duration": "63.7971ms",
+        "prompt_eval_count": "38 token(s)",
+        "prompt_eval_duration": "41.918ms",
+        "prompt_eval_rate": "95.42 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 1,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 9656.1,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:39:55.565+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.53,
+        "load_percent": 83
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:39:55.615+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:39:55.606, 5834, 6280, 12288, 89",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "일반적으로 생일 정보 조회에 필요한 조건은 다음과 같습니다. 그러나 정확한 절차는 해당 시스템이나 서비스에 따라 다를 수 있습니다:\n\n1. **접근 권한** - 본인의 생일은 별도의 인증이 필요할 수 있으며, 타인의 생일을 조회하려면 관리자 권한 또는 요청자의 동의가 필요합니다.\n\n2. **개인정보 보호법 준수** - 한국에서는 개인정보보호법 적용으로 생일 정보와 같은 개인정보는 법적 근거 없이 무단 수집・이용할 수 없습니다.\n\n3. **데이터 정책 확인** - 특정 서비스 (예: 회사 내 시스템, 가족 관리 앱 등) 는 사용자의 역할이나 권한에 따라 데이터 접근을 제한할 수 있습니다.\n\n4. **신원 인증** - 일부 시스템에서는 로그인 시 본인인증이 필요할 수 있습니다.\n\n정확한 조건을 알고 싶다면 해당 정보 제공 대상의 구체적인 서비스 또는 정책을 확인하는 것이 가장 좋습니다.",
+      "verbose_metrics": {
+        "total_duration": "9.5870219s",
+        "load_duration": "7.3895ms",
+        "prompt_eval_count": "24 token(s)",
+        "prompt_eval_duration": "49.024ms",
+        "prompt_eval_rate": "489.56 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 2,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 27283.0,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:40:22.898+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.4,
+        "load_percent": 84
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:40:22.951+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:40:22.941, 5546, 6568, 12288, 88",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "생일 정보를 조회하기 위한 필요 조건은 **조회 대상자**와 **권한의 범위**에 따라 달라집니다. 일반적으로 다음과 같은 기준이 적용됩니다:\n\n1. **본인의 생일 정보 조회**  \n   - 본인 신분증 (주민등록증, 여권 등) 을 통해 간편하게 확인 가능\n   - 별도의 조건 없이 본인의 개인정보는 언제든지 접근 가능\n\n2. **타인의 생일 정보 조회**  \n   - **개인정보보호법 및 관련 법령 준수**: 타인 정보 이용 시 명시적 동의가 필요하며, 합리적 사유 (가족관계 증명, 금융 거래 등) 가 있어야 함\n   - **공식 문서 요구**: 신분증 사본 (주민등록초청), 민원 증빙 서류, 또는 법적인 대리권 한계 내에서의 접근\n   - **제 3 자가 확인 시**: 개인정보 처리자에게 사전 동의 필요. 예: 가족관계 증명서 발급 시에는 본인 및 제 3 자가 동의해야 함\n\n3. **특수 시스템/서비스**  \n   - 기업이나 기관 내부 시스템은 보안 정책 (예: 직책 기반 접근) 을 따름\n   - 공공기관 (국가보안처, 세무청 등) 은 신분증 확인과 관련 법령 준수 필요\n\n4. **주의사항**  \n   - 개인 정보보호법은 생일 정보를 무단으로 수집·이용 시 처벌 가능 (개인정보보호법 제 29 조 위반 시 과태료 또는 형사처분)\n   - 공인된 정보 서비스 사용 시에는 개인정보 처리방침에 따를 것\n\n요약하면, **본인 정보는 자유롭게 조회**할 수 있지만, 타인의 생일을 확인하려면 **동의와 합리성 검증이 필수적**입니다. 구체적으로 궁금한 상황이 있다면 추가로 질문해 주세요!",
+      "verbose_metrics": {
+        "total_duration": "27.2063761s",
+        "load_duration": "9.1228ms",
+        "prompt_eval_count": "24 token(s)",
+        "prompt_eval_duration": "46.103ms",
+        "prompt_eval_rate": "86.76 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 3,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 22819.6,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:40:45.771+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.17,
+        "load_percent": 86
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:40:45.822+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:40:45.813, 5907, 6207, 12288, 87",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "질문하신 내용이 **어떤 서비스나 시스템에서 생일 정보를 확인하려는 것**인지에 따라 필요한 조건이 달라지지만, 일반적으로 다음과 같은 핵심 조건들이 필요합니다. 또한 저는 AI 이므로 개인의 특정 데이터는 가지고 있지 않습니다.\n\n### 1. 본인 (개인) 의 경우\n*   **권한 및 인증:** 해당 정보 입력이 허용된 계정이 있어야 합니다.\n*   **생년월일 데이터 제공:** 본인의 생년월일을 정확한 날짜 (연도/월/일) 로 입력할 수 있습니다.\n\n### 2. 타인의 생일 조회 (회사, 관할 기관, 커뮤니티 등) 의 경우\n타인의 개인정보 (생년월일 포함) 를 조회하려면 일반적으로 다음 조건들이 필요합니다.\n\n*   **권한 부여 및 인계 (Authorization):**\n    *   해당 정보 접근 권한을 가진 조직의 허가 또는 개인이 직접 동의해야 합니다.\n    *   예: 회사 직급, 관리자 자격, 초대받은 회원 등.\n*   **개인정보 보호 법규 준수:**\n    *   대부분의 서비스에서는 생년월일처럼 민감한 개인정보를 조회할 때 **\"개인정보 처리방침\"**에 명시된 근거가 필요합니다. (예: GDPR, 개인정보보호법)\n    *   동의 없이 접근은 법적 문제가 발생할 수 있습니다.\n*   **식별자 및 인증 수단:**\n    *   로그인 ID, 비밀번호, 생체 인증 등 보안 인증 절차가 수행되어야 합니다.\n\n### 3. 특수 서비스 예시\n*   **회사 HR 시스템:** 회사 직원을 대상으로 한 경우, 조직 관리권자와 HR 부서의 승인 + 내부 시스템 접근 권한이 필요합니다.\n*   **이벤트 및 캘린더 앱:** 개인용 캘린더 (Google Calendar 등) 에만 해당 정보가 저장되어 있으므로 본인의 계정 연동 상태여야 합니다.\n\n---\n\n**요약하자면:**\n제가 가진 정보 기반으로는 특정 사람의 생일날짜를 알 수 없습니다. 만약 **본인의 생일을 확인**하신다면 본인의 카트 또는 기록에 입력해 보시는 것이 가장 좋습니다. 타인 정보를 확인하려는 목적이라면 해당 정보 관리자가 반드시 동의하고 관련 법적 권한을 갖춰야 합니다.",
+      "verbose_metrics": {
+        "total_duration": "22.7430545s",
+        "load_duration": "4.483ms",
+        "prompt_eval_count": "24 token(s)",
+        "prompt_eval_duration": "45.209ms",
+        "prompt_eval_rate": "88.48 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 1,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 56294.6,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:41:42.117+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 2.05,
+        "load_percent": 87
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:41:42.166+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:41:42.156, 5595, 6519, 12288, 87",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": false,
+      "final_answer": "",
+      "verbose_metrics": {
+        "total_duration": "56.2150585s",
+        "load_duration": "6.1439ms",
+        "prompt_eval_count": "26 token(s)",
+        "prompt_eval_duration": "50.744ms",
+        "prompt_eval_rate": "512.38 tokens/s"
+      },
+      "completion_review": "Final answer marker missing; possible incomplete output"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 2,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 39248.2,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:42:21.415+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.82,
+        "load_percent": 88
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:42:21.479+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:42:21.469, 5903, 6211, 12288, 87",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "정보가 제공되지 않은 직원의 생일을 물어볼 때 어떻게 답해야 하는지 묻는 질문이시군요. 이는 **개인정보 보호**와 **업무적 윤리**에 관한 매우 중요한 문제입니다.\n\n결론부터 말씀드리면, **진위를 가리지 않고 알 수 없는 사실인 '제공되지 않는 정보'를 함부로 대답해서는 안 됩니다.** 이를 통해 위임을 해주고, 법적인 리스크 (개인정보보호법 위반 가능성) 를 줄 수 있습니다.\n\n상황에 따라 적절히 답변하는 가이드라인을 제안해 드립니다.\n\n### 1. 기본 원칙: 개인정보 보호\n*   **사실적 부정:** 내가 알지 못하거나 회사의 공인된 기록에 없는 정보라면, 가상의 내용을 만들어서 말하지 않는 것이 우선입니다.\n*   **권한 확인:** 생일 정보는 회사에서 필수적으로 수집한 '필수 개인정보'가 아닐 수 있으며, 단순 인트라넷 상의 공유가 허용되지 않을 수도 있습니다.\n*   **직접적인 답변은 불가:** 해당 정보가 제공되지 않았으므로, 이를 알 수 있다는 전제 아래는 \"알지 못합니다\" 혹은 \"제공되지 않았습니다\"라고 정중히 전달하는 것이 좋습니다.\n\n### 2. 상황에 따른 추천 답변 예시\n\n#### 상황 A: 업무적 질문 (HR 또는 상사에게 물어봄)\n> **\"해당 직원의 생일 정보에 대한 기록이 현재 시스템상 존재하지 않습니다. 개인정보 수집 및 이용 규정에 따라 정확한 정보를 제공하기 어려울 것 같습니다.\"**\n*   **포인트:** 정중하게 사실을 알리고, 정보의 출처가 불확실함을 언급합니다.\n\n#### 상황 B: 사적인 질문 (동료 또는 친구에게 물어봄)\n> **\"저희 회사의 내부 시스템에는 해당 기록이 없으신데요. 제가 잘못 알고 계시는 것이 아닐까 싶은데요.\"**\n*   **포인트:** 상대방의 편을 들어주고, 내가 확인하지 못했음을 솔직하게 인정합니다. 추측적인 답변은 피해야 합니다.\n\n#### 상황 C: 정보가 완전히 누락된 경우 (예: HR 의 요청)\n> **\"해당 개인정보는 보호를 위해 아직 미등록되어 있습니다. 업무 처리와 별도로 추가적으로 수집하거나 공유할 수 없습니다.\"**\n*   **포인트:** 법적/제도적 근거를 바탕으로 정보를 공개하지 못함을 명확히 합니다.\n\n### 3. 왜 이렇게 해야 합니까? (주요 이유)\n1.  **개인정보보호법 위반 방지:** 생일은 신원을 확인하는 '고유식 식별자'로 볼 수 있습니다. 이 정보가 누출될 경우 기업이나 개인의 책임이 발생할 수 있어, 검증되지 않은 정보는 제공할 수 없습니다.\n2.  **사생활 존중:** 많은 직원들은 사적인 개인정보를 회사와 공유하고 싶지 않을 수 있으며, 이를 통해 사적 경계선을 유지할 수 있습니다.\n3.  **신뢰 유지:** 가짜 정보나 추측된信息进行하면 신뢰도가 떨어질 수 있고, 추후 문제가 발생했을 때 책임을 져야 할 수도 있습니다.\n\n### 요약\n\"정보 제공되지 않은 직원\"의 생일을 물어보는 상황을 마주하셨다면, **\"저희는 공식적으로 해당 정보를 보유하고 있지 않습니다.\"** 또는 **\"개인정보 보호 차원에서 공유할 수 없습니다.\"** 라고 **정직하고 간결하게** 답변하는 것이 가장 안전한 방법입니다.",
+      "verbose_metrics": {
+        "total_duration": "39.1550862s",
+        "load_duration": "4.4303ms",
+        "prompt_eval_count": "26 token(s)",
+        "prompt_eval_duration": "44.603ms",
+        "prompt_eval_rate": "89.68 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "cli",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 3,
+      "command": [
+        "ollama",
+        "run",
+        "qwen3.5:4b-q4_K_M",
+        "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "wall_ms": 50325.9,
+      "has_response_text": true,
+      "error": null,
+      "timestamp": "2026-11-11T03:43:11.805+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.67,
+        "load_percent": 89
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:43:11.869+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:43:11.857, 5560, 6554, 12288, 84",
+        "error": null
+      },
+      "thinking_output_present": true,
+      "final_answer_marker": true,
+      "final_answer": "정보 제공이 되지 않았거나 확인하기 어려운 직원의 생일 정보를 물어볼 때 답해야 할 태도나 말은 **솔직함**과 **정확성**을 유지하는 것이 핵심입니다. 추측하거나 허위 정보를 제공하는 것은 업무 신뢰도를 해칠 수 있으므로, 다음과 같이 접근하고 답변하는 것이 적절합니다.\n\n### 1. 적절한 답변 방식\n가장 중요한 것은 **'알지 못함' 또는 '정보가 없음'**을 정중하게 밝히는 것입니다. 구체적인 예시로는 다음 표현이 적절할 수 있습니다.\n\n*   \"**저는 해당 직원님의 생일 정보를 가지고 있지 않습니다.**\" (가장 직접적이고 정확한 말)\n*   \"**상사에게 말씀드립니다. 확인해 드리겠습니다.**\" (확인을 위해 상급자나 HR 로 연락하는 경우)\n*   \"**현재 등록되어 있지 않거나 개인정보 보호 규정으로 인해 알 수 없습니다.**\" (규정이 적용된 경우)\n\n### 2. 피해야 할 행동 (주의 사항)\n*   **추측 금지:** \"아마...\" 또는 생일 날짜를 추측하여 말하지 마세요. 이는 사기나 오해를 초래할 수 있습니다.\n*   **개인정보 유출 방지:** 업무상 필요한 정보인지 여부를 먼저 확인하고, 불필요한 경우에는 정보를 공유하지 않는 것이 원칙입니다. (개인정보보호법 등)\n\n### 3. 다음 조치\n만약 생일 정보가 필요해서 질문이 들어왔다면, 그 정보는 본인이 직접 보유하고 있지 않다는 것을 인정하고 **사내 HR 부서나 관련 정보 관리자**에게 문의하거나 확인 요청하는 절차로 이어져야 합니다.\n\n요약하자면, **\"정확한 답변을 할 수 있는 권한이나 정보가 없다\"고 솔직하게 밝히고,** 필요한 경우 공식적인 경로를 통해 정보를 확보해야 한다고 안내하는 것이 가장 올바른 대응입니다.",
+      "verbose_metrics": {
+        "total_duration": "50.2495074s",
+        "load_duration": "6.5696ms",
+        "prompt_eval_count": "26 token(s)",
+        "prompt_eval_duration": "41.894ms",
+        "prompt_eval_rate": "95.48 tokens/s"
+      },
+      "completion_review": "Final answer marker observed"
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 1,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "안녕하세요. 한국어로 간단히 자기소개해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 8558.6,
+      "content": "안녕하세요! 저는 인공지능 어시스턴트입니다.\n\n궁금한 점이 있거나, 어떤 도움을 필요해 하실 때는 언제든지 말씀해 주세요. 최선을 다해 도와드리겠습니다.",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 23,
+      "prompt_eval_duration_ns": 49660000,
+      "eval_count": 649,
+      "eval_duration_ns": 8370314000,
+      "total_duration_ns": 8519685000,
+      "load_duration_ns": 4587600,
+      "error": null,
+      "timestamp": "2026-11-11T03:43:20.429+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.53,
+        "load_percent": 90
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:43:20.489+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:43:20.480, 5560, 6554, 12288, 87",
+        "error": null
+      },
+      "thinking_chars": 1989
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 2,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "안녕하세요. 한국어로 간단히 자기소개해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 7146.3,
+      "content": "안녕하세요! 저는 인공지능 어시스턴트입니다.\n\n사용자의 궁금한 점이나 작업에 대해 답변을 드리거나 도움을 드리기 위해 준비되어 있습니다. 무엇을 도와드릴까요?",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 23,
+      "prompt_eval_duration_ns": 41738000,
+      "eval_count": 543,
+      "eval_duration_ns": 7039661000,
+      "total_duration_ns": 7133042800,
+      "load_duration_ns": 10683300,
+      "error": null,
+      "timestamp": "2026-11-11T03:43:27.636+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.47,
+        "load_percent": 90
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:43:27.686+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:43:27.677, 5559, 6555, 12288, 87",
+        "error": null
+      },
+      "thinking_chars": 1631
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-1",
+      "prompt": "안녕하세요. 한국어로 간단히 자기소개해 주세요.",
+      "repeat": 3,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "안녕하세요. 한국어로 간단히 자기소개해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 10795.6,
+      "content": "안녕하세요! 저는 인공지능 어시스턴트입니다. 궁금한 점이나 질문이 있으시면 언제든지 물어봐 주세요. 또한 글쓰기, 번역, 정보 제공 등 다양한 작업도 도와드릴 수 있습니다. 오늘 어떤 도움이 필요하신가요?",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 23,
+      "prompt_eval_duration_ns": 40878000,
+      "eval_count": 823,
+      "eval_duration_ns": 10672334000,
+      "total_duration_ns": 10770506500,
+      "load_duration_ns": 12294600,
+      "error": null,
+      "timestamp": "2026-11-11T03:43:38.481+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.35,
+        "load_percent": 91
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:43:38.536+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:43:38.528, 5558, 6556, 12288, 85",
+        "error": null
+      },
+      "thinking_chars": 2239
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 1,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 9796.0,
+      "content": "죄송합니다만, 저는 AI 모델로 인해 **사용자 정보나 개인 데이터를 장기적으로 저장하지 않습니다**. 이 대화 중에는 홍길동님의 생일 (5 월 10 일) 과 같은 정보는 제공 주신 채로 기억할 수 있지만, 세션이 종료되면 모든 맥락이 초기화됩니다.\n\n**직원 데이터 관련 주의사항**:  \n1. **개인정보 처리**: 근로자 정보 (생일, 소속, 연락처 등) 는 조직의 보안 규정과 개인정보보호법 (예: GDPR, 개인정보 보호법) 준수 여부를 철저히 검증해야 합니다.  \n2. **보안 관리**: 기업의 HR 시스템이나 안전한 디지털 인프라를 통해 정보를 저장하고 접근 권한을 통제하는 것이 권장됩니다.  \n3. **AI 사용 제한**: 저는 개인 데이터에 대한 보안 책임이 없으며, 특정 정보와 관련해서는 내부 정책 및 규정을 준수한 별도의 시스템을 통해 관리해야 합니다.  \n\n혹시 실제 업무에서 홍길동님의 일정보를 다루고 계신다면, 조직의 보안 가이드라인을 참고하시고 HR 프로토콜을 활용하시는 것을 추천드립니다. 😊",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 38,
+      "prompt_eval_duration_ns": 53889000,
+      "eval_count": 746,
+      "eval_duration_ns": 9660637000,
+      "total_duration_ns": 9771793800,
+      "load_duration_ns": 13156400,
+      "error": null,
+      "timestamp": "2026-11-11T03:43:48.334+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.25,
+        "load_percent": 92
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:43:48.385+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:43:48.375, 5558, 6556, 12288, 86",
+        "error": null
+      },
+      "thinking_chars": 2553
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 2,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 42687.2,
+      "content": "홍길동 직원의 생일 정보를 말씀해 주셔서 감사합니다. 이 정보를 \"기억해야 할 것\"으로 취급할 때, 그 성격과 중요성을 설명해 드리면 다음과 같습니다.\n\n1.  **정보의 성격 (개인정보 분류)**\n    *   이는 **'인적 사항'** 또는 **'직원 사내 데이터'**로 분류되는 개인정보입니다. 구체적인 명함, 인사 관리 자료, HR(인사) 시스템에 등록된 개인 속성 중 하나입니다.\n    *   다만, 한국 개인정보보호법에서는 생일 자체만으로는 '민감정보'가 아니지만, 특정 직원을 식별할 수 있는 **개인식별정보**의 일부로 간주될 수 있으므로 관리 시 주의가 필요합니다.\n\n2.  **인공지능 (AI) 의 한계**\n    *   저는 인공지능으로 인해 각 대화 세션마다 정보를 처리하고 저장합니다. 하지만 보안 및 개인정보 보호 정책상, 저는 사용자 개인 정보가 세션 종료 후에도 영구적으로 기억하거나 보관하지 않습니다. 따라서 이 대화 이후의 새로운 대화에서는 이전의 내용을 기억할 수 없으니 그 점을 미리 알려드립니다.\n\n3.  **실무적 중요성**\n    *   왜 이렇게 기억해야 하는지 설명하자면, 이는 **사내 연상 행사 (생일 파티), 인사 관리 기록, 팀원 간의 신뢰 구축** 등 비즈니스 상황에서 매우 유용한 **'맥락 정보'**가 됩니다.\n    *   직원의 중요한纪念日 (Important Date) 을 알고 있다는 것은 조직 내 소속감과 존중을 느끼게 해주는 요소입니다.\n\n4.  **처리 권장 사항**\n    *   만약 이것이 실제 업무 데이터로 활용된다면, 회사나 개인의 시스템에 안전하게 저장하고 접근 권한 (접근 제어) 을 관리하는 것이 좋습니다.\n    *   또한, 개인정보 처리를 위해서는 해당 직원의 동의 여부도 함께 확인하여 적절한 법적 절차를 거치는 것이 바람직합니다.\n\n요약하자면, 이는 **개인 식별 정보를 포함한 인사관리 데이터**로, 보안과 사내 규칙 준수에 따라 신중하게 관리해야 할 정보입니다.",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 38,
+      "prompt_eval_duration_ns": 42971000,
+      "eval_count": 3247,
+      "eval_duration_ns": 42575671000,
+      "total_duration_ns": 42673102800,
+      "load_duration_ns": 6414700,
+      "error": null,
+      "timestamp": "2026-11-11T03:44:31.072+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 1.17,
+        "load_percent": 92
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:44:31.120+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:44:31.111, 5550, 6564, 12288, 87",
+        "error": null
+      },
+      "thinking_chars": 11262
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-2",
+      "prompt": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요.",
+      "repeat": 3,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "직원 홍길동의 생일은 5월 10일입니다. 이 정보를 기억해야 한다면 어떤 정보인지 설명해 주세요."
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 33587.6,
+      "content": "제공해주신 정보 **'직원 홍길동의 생일은 5 월 10 일입니다'** 는 다음 요소들을 포함하는 **특정 관할 데이터 (Personal/HR Data)** 로 이해하고 기억해야 합니다. 구체적인 구성 요소는 다음과 같습니다:\n\n1.  **주체 (Who):**\n    *   역할: 직원 (Employee)\n    *   명칭: 홍길동 (홍길동이름 - 개인명사 또는 직함)\n\n2.  **속성/속성 가치 (Attribute & Value):**\n    *   속성: 생일 (Birthday)\n    *   값: 5 월 10 일\n\n3.  **정보의 중요성 및 활용도:**\n    *   이 정보는 인사 관리 시스템에서 **'직원 프로필'** 의 일부로, 향후 축하 메시지 발송, 기념일 이벤트 운영, 또는 개인적인 관심사를 파악하는 데 유용하게 쓰이는 정보입니다.\n\n**[AI 가 정보를 처리할 때 유의사항]**\n*   **기억의 한계:** 저는 현재 대화 중인 세션 내에서만 이러한 정보를 기억하고 있습니다. 다른 대화창으로 이동하거나对话 (대화) 가 종료되면 해당 데이터는 사라집니다. 장기적인 저장이나 백업 기능은 외부 시스템이 필요합니다.\n*   **개인정보 처리:** 실제 업무에서 이런 정보 (생일, 이름 등) 는 개인정보보호법에 따라 보호되어야 하며, 접근할 때는 적절한 권한 확인과 동의 절차가 필요합니다.\n\n따라서 만약 이 정보가 **'기억'** 되어야 한다면, 위와 같이 **'홍길동 (직무/주체)', '5 월 10 일 (생일)'**이라는 두 가지 핵심 데이터를 구조화하여 현재 대화의 맥락 내에서 활용할 수 있도록 설정해 두시면 됩니다.",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 38,
+      "prompt_eval_duration_ns": 41066000,
+      "eval_count": 2562,
+      "eval_duration_ns": 33423928999,
+      "total_duration_ns": 33563445200,
+      "load_duration_ns": 13835300,
+      "error": null,
+      "timestamp": "2026-11-11T03:45:04.707+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.96,
+        "load_percent": 93
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:45:04.759+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:45:04.751, 5329, 6785, 12288, 85",
+        "error": null
+      },
+      "thinking_chars": 8575
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 1,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 7734.5,
+      "content": "생일자를 조회하려면 다음과 같은 조건이 필요할 수 있습니다:  \n\n1. **사용자 동의** – 개인정보보호법에 따라 생일과 같은 개인 정보는 사전 동의를 얻지 않고 접근할 수 없습니다.  \n2. **권한 및 인증** – 관련 시스템이나 데이터베이스에 접속하기 위해 본인인증이나 관리자가 부여된 권한이 필요합니다.  \n3. **데이터 소스 접근권** – 특정 서비스, 앱, 또는 공공 기관에서 birthday 데이터를 제공하는 경우, 해당 플랫폼의 조건을 준수해야 합니다.  \n4. **개인정보 보호법 및 규정** – GDPR, 개인정보처리방침 등 관련 법률을 따라야 하며, 불법적인 데이터 수집은 허용되지 않습니다.  \n\n예를 들어, 자신이 생일을 확인하려면 본인의 기록이나 인증서부터 사용해야 하고, 타인의 birthdays 를 조회하려면 해당 사람의 동의를 얻는 것이 필수적입니다. 추가적인 조건이나 구체적인 상황에 대해 물어보면 더 도움이 될 수 있습니다!",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 24,
+      "prompt_eval_duration_ns": 49662000,
+      "eval_count": 586,
+      "eval_duration_ns": 7590369000,
+      "total_duration_ns": 7715143600,
+      "load_duration_ns": 9451300,
+      "error": null,
+      "timestamp": "2026-11-11T03:45:12.494+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.81,
+        "load_percent": 94
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:45:12.553+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:45:12.543, 5329, 6785, 12288, 83",
+        "error": null
+      },
+      "thinking_chars": 2044
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 2,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 25796.3,
+      "content": "다음과 같은 사항을 확인해야 합니다:\n\n1. **법적·개인정보 보호 기준**\n   - 개인정보보호법 (한국) 및 GDPR 등 관련 법규에 따라 타인의 생년월일 정보는 **명시적인 동의**나 합법적 목적 없이 사용할 수 없습니다.\n   - 예외: 공개 정보 (예: 공인된 인물의 생년월일) 또는 본인 데이터 경우에만 접근 가능할 수 있습니다.\n\n2. **기술적 조건**\n   - 해당 데이터를 저장하는 시스템 (예: 정부 데이터베이스, 기업 DB 등) 에 접근하려면 **권한 있는 인증 절차** (ID/비밀번호, 보안 인증 등) 가 필요합니다.\n   - 데이터 처리 목적은 명확하고 투명해야 하며, 데이터 보호 기술 (암호화 등) 이 적용되어야 합니다.\n\n3. **정보 제공 조건**\n   - 본인 생년월일 조회 시에는 **적합한 신분증 또는 개인 식별 정보**가 필요할 수 있습니다.\n   - 타인 데이터에 접근하려면 **데이터 소유자의 동의** 또는 법률적으로 인정된 근거가 필요합니다.\n\n4. **추가 고려 사항**\n   - 한국에서는 개인정보 처리를 위해 **개인정보처리방침 동의 여부 확인**, 데이터 목적의 적절성 평가가 필요합니다.\n   - 관련 정책은 기관별로 다를 수 있으므로, 해당 서비스 제공자 (예: 정부 사이트, 금융 기관) 의 규정을 참고해야 합니다.\n\n결론적으로, 타인의 생년월일 정보는 법적으로 보호된 개인정보이므로 **합법적 근거와 동의를 확인하는 것**이 필수이며, 기술적으로는 접근 권한과 보안 절차가 충족되어야 합니다.",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 24,
+      "prompt_eval_duration_ns": 40531000,
+      "eval_count": 1973,
+      "eval_duration_ns": 25694824000,
+      "total_duration_ns": 25784636800,
+      "load_duration_ns": 8803300,
+      "error": null,
+      "timestamp": "2026-11-11T03:45:38.349+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.69,
+        "load_percent": 95
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:45:38.398+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:45:38.388, 5328, 6786, 12288, 86",
+        "error": null
+      },
+      "thinking_chars": 7936
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-3",
+      "prompt": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?",
+      "repeat": 3,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "이번 달 생일자를 조회하려면 어떤 조건이 필요합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 6173.4,
+      "content": "생일 정보를 조회하려면 다음 조건이 필요합니다:  \n1. **명확한 정보 입력**: 해당 사람의 이름과 생년월일 데이터를 정확히 입력해야 합니다.  \n2. **개인정보 보호**: 타인의 사생활을 보호하기 위해 직접적으로 개인 정보를 공유하거나 접근하는 것은 권장되지 않습니다.  \n3. **신뢰할 수 있는 출처**: 공식적인 데이터베이스 (예: 회사 HR 시스템, 가족 내 공유 캘린더 등) 를 통해 접근할 수 있어야 합니다.  \n\n일반적으로 저는 특정 개인의 생년월일 데이터를 보유하지 않으며, 이를 조회할 수 없습니다. 만약 본인이나 친인척의 생일을 확인하신다면 직접 기록을 참조하시는 것이 안전합니다. 추가 도움이 필요하시면 말씀해주세요! 😊",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 24,
+      "prompt_eval_duration_ns": 40627000,
+      "eval_count": 468,
+      "eval_duration_ns": 6053773000,
+      "total_duration_ns": 6161322300,
+      "load_duration_ns": 7595400,
+      "error": null,
+      "timestamp": "2026-11-11T03:45:44.572+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.56,
+        "load_percent": 96
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:45:44.628+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:45:44.618, 5328, 6786, 12288, 86",
+        "error": null
+      },
+      "thinking_chars": 1533
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 1,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 38301.5,
+      "content": "만약 **저 (AI)** 가 정보를 제공하지 않은 직원의 생일을 물으며 답변을 해야 한다면, 다음과 같은 원칙에 따라 답해야 합니다. 하지만 가장 먼저 확인하셔야 할 점은, **저는 인공지능이라 특정 사용자의 개인 정보 (생일 포함) 에 접근할 권한이 없습니다.** 따라서 직접적으로 \"날짜를 알려주세요\"라고 대답할 수 없습니다.\n\n다만, 실제 직장 상황에서 '정보를 알 수 없거나 정보가 제공되지 않은' 상황이라면 다음과 같이 답변하는 것이 적절합니다:\n\n### 1. AI 가 아닌 일반적인职场 (Workplace) 상황\n만약 HR 담당자나 동료에게 이 질문을 했다면:\n\n*   **정확하지 않을 때:** \"내 기록에는 해당 정보가 없습니다.\" 라고 정중하게 밝히며, 추측이나虚假信息 (거짓 정보) 를 절대 제공해서는 안 됩니다.\n*   **시스템/폼 작성 시:** \"정보 미제공\" 또는 \"**미입력**\"라고 표시하거나 공백을 유지해야 합니다. 무조건 임의로 기입하는 것은 개인정보 보호법 위반일 수 있습니다.\n*   **개인정보 보호 (Privacy):** 생일은 민감한 개인정보 중 하나입니다. 회사 정책이나 지역 법률 (예: 대한민국의 개인정보보호법, EU GDPR 등) 에 따라 필요하지 않은 경우 (예: 인사관리 필수가 아님) 는 질문 자체를 피하거나, 필요한 경우만 수집하는 것이 원칙입니다.\n\n### 2. 만약 직접 그 직원을 만났을 때\n직원의 생일을 물어본 사람이 \"내 정보도 안 주었어요\"라고 대답한다면:\n\n*   **정중하게 답변:** \"죄송하지만 관련 기록에 정보가 없네요.\" 또는 \"기존에 등록되지 않았음을 알려드릴게요.\"\n*   **추측 금지:** \"아, 저는 5 월 생이지요?\" 같은 식의 추측 (Hallucination) 을 절대 하지 말고, 정직하게 '알 수 없다'고 응답해야 합니다.\n\n### 결론\n**정보 제공이 없다면, 그 정보를 알 수 없다고 솔직하게 인정하는 것이 원칙입니다.**\n\n*   **AI 기준:** 해당 직원의 생일을 제가 알 수 있습니다.\"라고 거짓을 말하지 않습니다. \"저는 개인 정보를 저장하고 있지 않습니다.\" 라고 답변합니다.\n*   **사람 기준:** \"해당 정보는 내 기록에 없네요/제공되지 않았습니다.\" 라고 답변하며, 추측이나 유추한 데이터로 답변하는 것을 자제해야 합니다.\n\n이러한 접근은 개인의 프라이버시를 존중하고 정보의 정확성을 보장하기 위해 필요합니다.",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 26,
+      "prompt_eval_duration_ns": 49590000,
+      "eval_count": 2897,
+      "eval_duration_ns": 38170644000,
+      "total_duration_ns": 38281680100,
+      "load_duration_ns": 6175000,
+      "error": null,
+      "timestamp": "2026-11-11T03:46:22.929+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.51,
+        "load_percent": 96
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:46:23.016+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:46:23.001, 5394, 6720, 12288, 83",
+        "error": null
+      },
+      "thinking_chars": 9413
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 2,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 37867.1,
+      "content": "정보 제공이 되지 않은 직원의 생일을 묻는 상황에 대해 답해야 할 때를 가정하고 답변을 정리해 드립니다. 이 상황은 일반적으로 **'개인정보 보호'**와 **'업무 프로세스 준수'** 문제가 동시에 제기됩니다.\n\n**핵심 원칙:**\n> \"필요한 경우에만 개인정보가 공유되며, 내부 규정과 법률 (개인정보보호법) 을 준수해야 합니다.\"\n\n상황에 따라 다음과 같이 답변하시는 것을 추천합니다.\n\n---\n\n### 1. **내부 구성원 간에서 묻는 상황 (비즈니스 목적 외)**\n예: 동료나 관리자가 업무 필요 이상으로 생일을 물을 때\n\n*   **답변 예시:** \"죄송하지만, 개인정보 보호 정책상 제가 알 수 없는 부분입니다.\"\n*   **답변 예시:** \"해당 정보는 회사의 시스템이나 HR 파일에만 보관되어 있어 공개할 수 없습니다.\"\n*   **요점:** 구체적인 내용을 나열하기보다, **개인정보 보호 규정**을 언급하여 거절하는 것이 안전합니다.\n\n### 2. **시스템/기록에 정보가 없는 상황 (인사 담당자/HR)**\n예: HR에서 인사 시스템이 없거나 직원으로부터 제공받지 않은 경우\n\n*   **답변 예시:** \"해당 직원의 생일 정보는 아직 기록되지 않아 확인이 어렵습니다.\"\n*   **추가 조치:** \"확인 및 수집을 원하시면 HR 부서에 연락하시기 바랍니다.\"\n*   **요점:** 정보를 **가짜로 만들어서 답할 수 없으며**, 공식적인 절차 (정보 제공 요청) 를 유도해야 합니다.\n\n### 3. **외부 요청 (고객/동료사 등)**\n예: 외부에서 직원의 생일을 묻는 경우\n\n*   **답변 예시:** \"개인 정보 보호를 위해 해당 정보를 공유할 수 없습니다.\"\n*   **요점:** **무조건 거부**해야 하며, 이를 설명하지 말고 '규정상 가능하지 않음'으로 명확히 하십시오.\n\n---\n\n### 💡 참고 사항 및 주의사항\n1.  **추측 금지:** 생일이 없거나 잘못 기록된 경우를 추측하여 답변하면 오해가 될 수 있으므로 **\"확인하지 못함\"** 또는 **\"공유 불가\"**로 답하는 것이 좋습니다.\n2.  **업무 효율성 vs 개인정보:** 만약 Birthday Party 등 내부 이벤트에 대한 정보라면 HR 부서 공식 승인 시에만 공유할 수 있음을 명시하세요.\n3.  **법적 위험:** 한국은 '개인정보보호법'을 준수해야 하며, 고용주와 근로자의 간사 관계에서도 업무와 관련된 범위 외의 개인 정보는 보호받아야 합니다.\n\n**결론적으로 가장 안전한 답변은 다음과 같습니다.**\n\n> **\"해당 정보는 개인정보에 해당하므로 제가 알 수 없는 부분입니다. 궁금한 사항이 있다면 HR 또는 관리자께 문의하시기 바랍니다.\"**",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "stop",
+      "prompt_eval_count": 26,
+      "prompt_eval_duration_ns": 55847000,
+      "eval_count": 2881,
+      "eval_duration_ns": 37691492000,
+      "total_duration_ns": 37864884500,
+      "load_duration_ns": 12627600,
+      "error": null,
+      "timestamp": "2026-11-11T03:47:00.883+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.48,
+        "load_percent": 96
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:47:00.933+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:47:00.923, 5336, 6778, 12288, 86",
+        "error": null
+      },
+      "thinking_chars": 9271
+    },
+    {
+      "channel": "api",
+      "prompt_id": "synthetic-4",
+      "prompt": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?",
+      "repeat": 3,
+      "request_url": "http://127.0.0.1:11434/api/chat",
+      "request_payload": {
+        "model": "qwen3.5:4b-q4_K_M",
+        "messages": [
+          {
+            "role": "user",
+            "content": "정보가 제공되지 않은 직원의 생일을 물으면 어떻게 답해야 합니까?"
+          }
+        ],
+        "stream": false
+      },
+      "http_status": 200,
+      "wall_ms": 54856.7,
+      "content": "직원의 생일이 제공되지 않은 경우 또는 개인 정보 보호 원칙에 따라 해당 정보를 알 수 없는 상황에서 어떻게 답변하는지에 대해 도와드리겠습니다.\n\n이 상황은 주로 **개인정보 보호 (Privacy)** 와 **업무 프로페셔널성** 측면에서 접근해야 합니다. 상황과根据您的 역할 (HR, 관리자, 일반 직원 등) 에 따라 추천하는 답변 방식이 달라집니다.\n\n### 1. 개인정보 제공 요청에 대한 표준 반응\n만약 조직의 내부 정책상 생일 정보에 대한 접근 권한이나 보유 데이터가 없다면, **개인정보보호법** 에 따른 보호 관점에서 다음과 같이 답변해야 합니다.\n\n*   **표준 답변:** \"죄송합니다만, 해당 사내 관리자에게도 개인 정보 조회는 제한이 있으며, 저는 그 정보가 없습니다.\" 또는 \"해당 정보는 민감한 개인정보로 처리하고 있어 공유할 수 없습니다.\"\n*   **중요성:** 특정 직원의 생일을 알려주는 것은 법적/윤리적 문제를 초래할 수 있으므로, 불필요하게 정보를 제공할 수는 없음을 강조해야 합니다.\n\n### 2. HR 또는 관리자가 담당하는 상황 (직원에게 물어볼 때)\n만약 **\"직원이 스스로 그 정보가 없는 경우 어떻게 물을 것인가?\"** 에 대한 의문이라면, 다음과 같이 접근하세요.\n\n*   **의미 있는 목적 제시:** 생일을 묻는 것은 단순히 호기심보다는 **'팀",
+      "thinking_present": true,
+      "done": true,
+      "done_reason": "length",
+      "prompt_eval_count": 26,
+      "prompt_eval_duration_ns": 51933000,
+      "eval_count": 4070,
+      "eval_duration_ns": 54703751000,
+      "total_duration_ns": 54855588100,
+      "load_duration_ns": 5718500,
+      "error": "truncated_length",
+      "timestamp": "2026-11-11T03:47:55.790+09:00",
+      "system_memory": {
+        "total_gib": 15.81,
+        "free_gib": 0.49,
+        "load_percent": 96
+      },
+      "gpu_before_after": {
+        "timestamp": "2026-11-11T03:47:55.844+09:00",
+        "exit_code": 0,
+        "output": "2026/11/11 03:47:55.836, 5663, 6451, 12288, 87",
+        "error": null
+      },
+      "thinking_chars": 15375
+    }
+  ],
+  "gpu_samples_during_test": [
+    {
+      "timestamp": "2026-11-11T03:37:05.006+09:00",
+      "output": "2026/11/11 03:37:04.997, 1848, 10266, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:06.064+09:00",
+      "output": "2026/11/11 03:37:06.055, 1848, 10266, 12288, 8"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:07.122+09:00",
+      "output": "2026/11/11 03:37:07.114, 1841, 10273, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:08.188+09:00",
+      "output": "2026/11/11 03:37:08.179, 1841, 10273, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:09.237+09:00",
+      "output": "2026/11/11 03:37:09.230, 1841, 10273, 12288, 7"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:10.303+09:00",
+      "output": "2026/11/11 03:37:10.293, 4444, 7670, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:11.376+09:00",
+      "output": "2026/11/11 03:37:11.366, 4718, 7396, 12288, 3"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:12.431+09:00",
+      "output": "2026/11/11 03:37:12.422, 4718, 7396, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:13.494+09:00",
+      "output": "2026/11/11 03:37:13.485, 5364, 6750, 12288, 8"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:14.551+09:00",
+      "output": "2026/11/11 03:37:14.543, 5596, 6518, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:15.621+09:00",
+      "output": "2026/11/11 03:37:15.612, 5596, 6518, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:16.684+09:00",
+      "output": "2026/11/11 03:37:16.675, 5596, 6518, 12288, 1"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:17.732+09:00",
+      "output": "2026/11/11 03:37:17.724, 5596, 6518, 12288, 5"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:18.791+09:00",
+      "output": "2026/11/11 03:37:18.782, 5596, 6518, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:19.853+09:00",
+      "output": "2026/11/11 03:37:19.845, 5598, 6516, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:20.918+09:00",
+      "output": "2026/11/11 03:37:20.910, 5598, 6516, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:21.975+09:00",
+      "output": "2026/11/11 03:37:21.966, 5598, 6516, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:23.033+09:00",
+      "output": "2026/11/11 03:37:23.024, 5598, 6516, 12288, 5"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:24.086+09:00",
+      "output": "2026/11/11 03:37:24.078, 5598, 6516, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:25.149+09:00",
+      "output": "2026/11/11 03:37:25.140, 5598, 6516, 12288, 6"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:26.204+09:00",
+      "output": "2026/11/11 03:37:26.196, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:27.260+09:00",
+      "output": "2026/11/11 03:37:27.251, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:28.309+09:00",
+      "output": "2026/11/11 03:37:28.300, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:29.366+09:00",
+      "output": "2026/11/11 03:37:29.357, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:30.427+09:00",
+      "output": "2026/11/11 03:37:30.419, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:31.488+09:00",
+      "output": "2026/11/11 03:37:31.480, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:32.537+09:00",
+      "output": "2026/11/11 03:37:32.529, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:33.608+09:00",
+      "output": "2026/11/11 03:37:33.599, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:34.666+09:00",
+      "output": "2026/11/11 03:37:34.657, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:35.728+09:00",
+      "output": "2026/11/11 03:37:35.719, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:36.783+09:00",
+      "output": "2026/11/11 03:37:36.774, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:37.837+09:00",
+      "output": "2026/11/11 03:37:37.828, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:38.901+09:00",
+      "output": "2026/11/11 03:37:38.892, 5598, 6516, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:39.955+09:00",
+      "output": "2026/11/11 03:37:39.946, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:41.010+09:00",
+      "output": "2026/11/11 03:37:41.001, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:42.058+09:00",
+      "output": "2026/11/11 03:37:42.050, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:43.103+09:00",
+      "output": "2026/11/11 03:37:43.095, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:44.157+09:00",
+      "output": "2026/11/11 03:37:44.149, 5598, 6516, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:45.216+09:00",
+      "output": "2026/11/11 03:37:45.208, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:46.267+09:00",
+      "output": "2026/11/11 03:37:46.259, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:47.330+09:00",
+      "output": "2026/11/11 03:37:47.321, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:48.392+09:00",
+      "output": "2026/11/11 03:37:48.383, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:49.444+09:00",
+      "output": "2026/11/11 03:37:49.436, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:50.497+09:00",
+      "output": "2026/11/11 03:37:50.488, 5598, 6516, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:51.560+09:00",
+      "output": "2026/11/11 03:37:51.551, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:52.620+09:00",
+      "output": "2026/11/11 03:37:52.611, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:53.697+09:00",
+      "output": "2026/11/11 03:37:53.689, 5598, 6516, 12288, 63"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:54.759+09:00",
+      "output": "2026/11/11 03:37:54.750, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:55.815+09:00",
+      "output": "2026/11/11 03:37:55.807, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:56.880+09:00",
+      "output": "2026/11/11 03:37:56.872, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:57.940+09:00",
+      "output": "2026/11/11 03:37:57.932, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:37:58.990+09:00",
+      "output": "2026/11/11 03:37:58.982, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:00.052+09:00",
+      "output": "2026/11/11 03:38:00.043, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:01.122+09:00",
+      "output": "2026/11/11 03:38:01.113, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:02.178+09:00",
+      "output": "2026/11/11 03:38:02.170, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:03.224+09:00",
+      "output": "2026/11/11 03:38:03.216, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:04.275+09:00",
+      "output": "2026/11/11 03:38:04.267, 5598, 6516, 12288, 0"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:05.330+09:00",
+      "output": "2026/11/11 03:38:05.322, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:06.373+09:00",
+      "output": "2026/11/11 03:38:06.364, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:07.429+09:00",
+      "output": "2026/11/11 03:38:07.421, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:08.491+09:00",
+      "output": "2026/11/11 03:38:08.482, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:09.541+09:00",
+      "output": "2026/11/11 03:38:09.532, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:10.596+09:00",
+      "output": "2026/11/11 03:38:10.588, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:11.649+09:00",
+      "output": "2026/11/11 03:38:11.640, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:12.697+09:00",
+      "output": "2026/11/11 03:38:12.690, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:13.762+09:00",
+      "output": "2026/11/11 03:38:13.753, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:14.822+09:00",
+      "output": "2026/11/11 03:38:14.814, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:15.872+09:00",
+      "output": "2026/11/11 03:38:15.863, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:16.921+09:00",
+      "output": "2026/11/11 03:38:16.912, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:17.969+09:00",
+      "output": "2026/11/11 03:38:17.960, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:19.016+09:00",
+      "output": "2026/11/11 03:38:19.008, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:20.066+09:00",
+      "output": "2026/11/11 03:38:20.057, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:21.123+09:00",
+      "output": "2026/11/11 03:38:21.114, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:22.176+09:00",
+      "output": "2026/11/11 03:38:22.168, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:23.232+09:00",
+      "output": "2026/11/11 03:38:23.224, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:24.283+09:00",
+      "output": "2026/11/11 03:38:24.274, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:25.329+09:00",
+      "output": "2026/11/11 03:38:25.321, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:26.385+09:00",
+      "output": "2026/11/11 03:38:26.376, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:27.428+09:00",
+      "output": "2026/11/11 03:38:27.420, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:28.475+09:00",
+      "output": "2026/11/11 03:38:28.467, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:29.523+09:00",
+      "output": "2026/11/11 03:38:29.515, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:30.581+09:00",
+      "output": "2026/11/11 03:38:30.572, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:31.645+09:00",
+      "output": "2026/11/11 03:38:31.637, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:32.716+09:00",
+      "output": "2026/11/11 03:38:32.707, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:33.784+09:00",
+      "output": "2026/11/11 03:38:33.776, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:34.836+09:00",
+      "output": "2026/11/11 03:38:34.828, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:35.900+09:00",
+      "output": "2026/11/11 03:38:35.892, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:36.955+09:00",
+      "output": "2026/11/11 03:38:36.947, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:38.005+09:00",
+      "output": "2026/11/11 03:38:37.995, 5598, 6516, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:39.069+09:00",
+      "output": "2026/11/11 03:38:39.059, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:40.124+09:00",
+      "output": "2026/11/11 03:38:40.113, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:41.193+09:00",
+      "output": "2026/11/11 03:38:41.185, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:42.259+09:00",
+      "output": "2026/11/11 03:38:42.250, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:43.326+09:00",
+      "output": "2026/11/11 03:38:43.317, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:44.401+09:00",
+      "output": "2026/11/11 03:38:44.392, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:45.464+09:00",
+      "output": "2026/11/11 03:38:45.455, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:46.524+09:00",
+      "output": "2026/11/11 03:38:46.515, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:47.588+09:00",
+      "output": "2026/11/11 03:38:47.576, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:48.649+09:00",
+      "output": "2026/11/11 03:38:48.640, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:49.707+09:00",
+      "output": "2026/11/11 03:38:49.699, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:50.762+09:00",
+      "output": "2026/11/11 03:38:50.753, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:51.816+09:00",
+      "output": "2026/11/11 03:38:51.808, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:52.866+09:00",
+      "output": "2026/11/11 03:38:52.857, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:53.927+09:00",
+      "output": "2026/11/11 03:38:53.918, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:54.975+09:00",
+      "output": "2026/11/11 03:38:54.966, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:56.024+09:00",
+      "output": "2026/11/11 03:38:56.015, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:57.072+09:00",
+      "output": "2026/11/11 03:38:57.064, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:58.123+09:00",
+      "output": "2026/11/11 03:38:58.114, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:38:59.186+09:00",
+      "output": "2026/11/11 03:38:59.177, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:00.239+09:00",
+      "output": "2026/11/11 03:39:00.231, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:01.296+09:00",
+      "output": "2026/11/11 03:39:01.288, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:02.356+09:00",
+      "output": "2026/11/11 03:39:02.347, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:03.412+09:00",
+      "output": "2026/11/11 03:39:03.405, 5598, 6516, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:04.468+09:00",
+      "output": "2026/11/11 03:39:04.459, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:05.526+09:00",
+      "output": "2026/11/11 03:39:05.517, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:06.593+09:00",
+      "output": "2026/11/11 03:39:06.582, 5598, 6516, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:07.651+09:00",
+      "output": "2026/11/11 03:39:07.643, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:08.697+09:00",
+      "output": "2026/11/11 03:39:08.689, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:09.755+09:00",
+      "output": "2026/11/11 03:39:09.746, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:10.816+09:00",
+      "output": "2026/11/11 03:39:10.807, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:11.868+09:00",
+      "output": "2026/11/11 03:39:11.856, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:12.935+09:00",
+      "output": "2026/11/11 03:39:12.926, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:13.982+09:00",
+      "output": "2026/11/11 03:39:13.974, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:15.041+09:00",
+      "output": "2026/11/11 03:39:15.032, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:16.095+09:00",
+      "output": "2026/11/11 03:39:16.086, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:17.157+09:00",
+      "output": "2026/11/11 03:39:17.149, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:18.211+09:00",
+      "output": "2026/11/11 03:39:18.203, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:19.268+09:00",
+      "output": "2026/11/11 03:39:19.259, 5598, 6516, 12288, 80"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:20.336+09:00",
+      "output": "2026/11/11 03:39:20.329, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:21.392+09:00",
+      "output": "2026/11/11 03:39:21.383, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:22.444+09:00",
+      "output": "2026/11/11 03:39:22.435, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:23.491+09:00",
+      "output": "2026/11/11 03:39:23.483, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:24.551+09:00",
+      "output": "2026/11/11 03:39:24.543, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:25.605+09:00",
+      "output": "2026/11/11 03:39:25.596, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:26.663+09:00",
+      "output": "2026/11/11 03:39:26.654, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:27.708+09:00",
+      "output": "2026/11/11 03:39:27.699, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:28.763+09:00",
+      "output": "2026/11/11 03:39:28.754, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:29.821+09:00",
+      "output": "2026/11/11 03:39:29.813, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:30.878+09:00",
+      "output": "2026/11/11 03:39:30.869, 5598, 6516, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:31.947+09:00",
+      "output": "2026/11/11 03:39:31.938, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:32.997+09:00",
+      "output": "2026/11/11 03:39:32.987, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:34.053+09:00",
+      "output": "2026/11/11 03:39:34.043, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:35.116+09:00",
+      "output": "2026/11/11 03:39:35.108, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:36.170+09:00",
+      "output": "2026/11/11 03:39:36.162, 5598, 6516, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:37.226+09:00",
+      "output": "2026/11/11 03:39:37.218, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:38.289+09:00",
+      "output": "2026/11/11 03:39:38.281, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:39.350+09:00",
+      "output": "2026/11/11 03:39:39.342, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:40.400+09:00",
+      "output": "2026/11/11 03:39:40.391, 5598, 6516, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:41.463+09:00",
+      "output": "2026/11/11 03:39:41.454, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:42.516+09:00",
+      "output": "2026/11/11 03:39:42.508, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:43.577+09:00",
+      "output": "2026/11/11 03:39:43.568, 5598, 6516, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:44.631+09:00",
+      "output": "2026/11/11 03:39:44.621, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:45.692+09:00",
+      "output": "2026/11/11 03:39:45.683, 5598, 6516, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:46.748+09:00",
+      "output": "2026/11/11 03:39:46.740, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:47.803+09:00",
+      "output": "2026/11/11 03:39:47.795, 5598, 6516, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:48.859+09:00",
+      "output": "2026/11/11 03:39:48.850, 5598, 6516, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:49.921+09:00",
+      "output": "2026/11/11 03:39:49.914, 5645, 6469, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:50.984+09:00",
+      "output": "2026/11/11 03:39:50.975, 5645, 6469, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:52.038+09:00",
+      "output": "2026/11/11 03:39:52.029, 5449, 6665, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:53.093+09:00",
+      "output": "2026/11/11 03:39:53.083, 5632, 6482, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:54.149+09:00",
+      "output": "2026/11/11 03:39:54.139, 5711, 6403, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:55.219+09:00",
+      "output": "2026/11/11 03:39:55.210, 5834, 6280, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:56.275+09:00",
+      "output": "2026/11/11 03:39:56.267, 5830, 6284, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:57.333+09:00",
+      "output": "2026/11/11 03:39:57.323, 5829, 6285, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:58.394+09:00",
+      "output": "2026/11/11 03:39:58.383, 5763, 6351, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:39:59.461+09:00",
+      "output": "2026/11/11 03:39:59.452, 5715, 6399, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:00.524+09:00",
+      "output": "2026/11/11 03:40:00.514, 5559, 6555, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:01.568+09:00",
+      "output": "2026/11/11 03:40:01.560, 5550, 6564, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:02.625+09:00",
+      "output": "2026/11/11 03:40:02.616, 5563, 6551, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:03.692+09:00",
+      "output": "2026/11/11 03:40:03.684, 5545, 6569, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:04.769+09:00",
+      "output": "2026/11/11 03:40:04.758, 5537, 6577, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:05.836+09:00",
+      "output": "2026/11/11 03:40:05.828, 5525, 6589, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:06.895+09:00",
+      "output": "2026/11/11 03:40:06.886, 5514, 6600, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:07.948+09:00",
+      "output": "2026/11/11 03:40:07.939, 5515, 6599, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:09.011+09:00",
+      "output": "2026/11/11 03:40:09.001, 5513, 6601, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:10.070+09:00",
+      "output": "2026/11/11 03:40:10.062, 5528, 6586, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:11.125+09:00",
+      "output": "2026/11/11 03:40:11.115, 5526, 6588, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:12.182+09:00",
+      "output": "2026/11/11 03:40:12.172, 5516, 6598, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:13.240+09:00",
+      "output": "2026/11/11 03:40:13.231, 5518, 6596, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:14.296+09:00",
+      "output": "2026/11/11 03:40:14.288, 5548, 6566, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:15.358+09:00",
+      "output": "2026/11/11 03:40:15.348, 5542, 6572, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:16.427+09:00",
+      "output": "2026/11/11 03:40:16.419, 5545, 6569, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:17.489+09:00",
+      "output": "2026/11/11 03:40:17.481, 5565, 6549, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:18.553+09:00",
+      "output": "2026/11/11 03:40:18.543, 5574, 6540, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:19.603+09:00",
+      "output": "2026/11/11 03:40:19.592, 5557, 6557, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:20.679+09:00",
+      "output": "2026/11/11 03:40:20.669, 5553, 6561, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:21.725+09:00",
+      "output": "2026/11/11 03:40:21.715, 5561, 6553, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:22.784+09:00",
+      "output": "2026/11/11 03:40:22.775, 5557, 6557, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:23.852+09:00",
+      "output": "2026/11/11 03:40:23.843, 5544, 6570, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:24.914+09:00",
+      "output": "2026/11/11 03:40:24.903, 5542, 6572, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:25.976+09:00",
+      "output": "2026/11/11 03:40:25.967, 5521, 6593, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:27.038+09:00",
+      "output": "2026/11/11 03:40:27.029, 5533, 6581, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:28.101+09:00",
+      "output": "2026/11/11 03:40:28.091, 5528, 6586, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:29.170+09:00",
+      "output": "2026/11/11 03:40:29.160, 5530, 6584, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:30.221+09:00",
+      "output": "2026/11/11 03:40:30.212, 5682, 6432, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:31.288+09:00",
+      "output": "2026/11/11 03:40:31.279, 5707, 6407, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:32.339+09:00",
+      "output": "2026/11/11 03:40:32.331, 5740, 6374, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:33.400+09:00",
+      "output": "2026/11/11 03:40:33.391, 5750, 6364, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:34.448+09:00",
+      "output": "2026/11/11 03:40:34.440, 5716, 6398, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:35.498+09:00",
+      "output": "2026/11/11 03:40:35.489, 5693, 6421, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:36.560+09:00",
+      "output": "2026/11/11 03:40:36.549, 5701, 6413, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:37.623+09:00",
+      "output": "2026/11/11 03:40:37.614, 5697, 6417, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:38.682+09:00",
+      "output": "2026/11/11 03:40:38.672, 5682, 6432, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:39.742+09:00",
+      "output": "2026/11/11 03:40:39.732, 5771, 6343, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:40.805+09:00",
+      "output": "2026/11/11 03:40:40.797, 5778, 6336, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:41.878+09:00",
+      "output": "2026/11/11 03:40:41.864, 5795, 6319, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:42.945+09:00",
+      "output": "2026/11/11 03:40:42.935, 5829, 6285, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:44.005+09:00",
+      "output": "2026/11/11 03:40:43.996, 5934, 6180, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:45.069+09:00",
+      "output": "2026/11/11 03:40:45.060, 5919, 6195, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:46.126+09:00",
+      "output": "2026/11/11 03:40:46.116, 5907, 6207, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:47.179+09:00",
+      "output": "2026/11/11 03:40:47.170, 5916, 6198, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:48.239+09:00",
+      "output": "2026/11/11 03:40:48.231, 5847, 6267, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:49.296+09:00",
+      "output": "2026/11/11 03:40:49.288, 5601, 6513, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:50.365+09:00",
+      "output": "2026/11/11 03:40:50.355, 5589, 6525, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:51.415+09:00",
+      "output": "2026/11/11 03:40:51.407, 5574, 6540, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:52.470+09:00",
+      "output": "2026/11/11 03:40:52.461, 5570, 6544, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:53.525+09:00",
+      "output": "2026/11/11 03:40:53.515, 5584, 6530, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:54.587+09:00",
+      "output": "2026/11/11 03:40:54.578, 5583, 6531, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:55.651+09:00",
+      "output": "2026/11/11 03:40:55.643, 5569, 6545, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:56.712+09:00",
+      "output": "2026/11/11 03:40:56.703, 5569, 6545, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:57.772+09:00",
+      "output": "2026/11/11 03:40:57.762, 5583, 6531, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:58.847+09:00",
+      "output": "2026/11/11 03:40:58.838, 5582, 6532, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:40:59.905+09:00",
+      "output": "2026/11/11 03:40:59.897, 5579, 6535, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:00.952+09:00",
+      "output": "2026/11/11 03:41:00.942, 5582, 6532, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:02.007+09:00",
+      "output": "2026/11/11 03:41:01.999, 5610, 6504, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:03.073+09:00",
+      "output": "2026/11/11 03:41:03.063, 5779, 6335, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:04.115+09:00",
+      "output": "2026/11/11 03:41:04.107, 5833, 6281, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:05.175+09:00",
+      "output": "2026/11/11 03:41:05.167, 5833, 6281, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:06.234+09:00",
+      "output": "2026/11/11 03:41:06.223, 5657, 6457, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:07.311+09:00",
+      "output": "2026/11/11 03:41:07.302, 5749, 6365, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:08.388+09:00",
+      "output": "2026/11/11 03:41:08.379, 5848, 6266, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:09.436+09:00",
+      "output": "2026/11/11 03:41:09.427, 5861, 6253, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:10.496+09:00",
+      "output": "2026/11/11 03:41:10.487, 5887, 6227, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:11.545+09:00",
+      "output": "2026/11/11 03:41:11.536, 5845, 6269, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:12.610+09:00",
+      "output": "2026/11/11 03:41:12.600, 5755, 6359, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:13.675+09:00",
+      "output": "2026/11/11 03:41:13.665, 5701, 6413, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:14.742+09:00",
+      "output": "2026/11/11 03:41:14.732, 5813, 6301, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:15.788+09:00",
+      "output": "2026/11/11 03:41:15.780, 5831, 6283, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:16.846+09:00",
+      "output": "2026/11/11 03:41:16.837, 5796, 6318, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:17.901+09:00",
+      "output": "2026/11/11 03:41:17.892, 5796, 6318, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:18.948+09:00",
+      "output": "2026/11/11 03:41:18.939, 5818, 6296, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:20.020+09:00",
+      "output": "2026/11/11 03:41:20.011, 5641, 6473, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:21.075+09:00",
+      "output": "2026/11/11 03:41:21.066, 5634, 6480, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:22.135+09:00",
+      "output": "2026/11/11 03:41:22.126, 5629, 6485, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:23.201+09:00",
+      "output": "2026/11/11 03:41:23.191, 5610, 6504, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:24.253+09:00",
+      "output": "2026/11/11 03:41:24.244, 5595, 6519, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:25.303+09:00",
+      "output": "2026/11/11 03:41:25.293, 5601, 6513, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:26.374+09:00",
+      "output": "2026/11/11 03:41:26.364, 5620, 6494, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:27.428+09:00",
+      "output": "2026/11/11 03:41:27.419, 5670, 6444, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:28.492+09:00",
+      "output": "2026/11/11 03:41:28.482, 5788, 6326, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:29.556+09:00",
+      "output": "2026/11/11 03:41:29.545, 5844, 6270, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:30.616+09:00",
+      "output": "2026/11/11 03:41:30.608, 5879, 6235, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:31.674+09:00",
+      "output": "2026/11/11 03:41:31.665, 5865, 6249, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:32.725+09:00",
+      "output": "2026/11/11 03:41:32.716, 5865, 6249, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:33.786+09:00",
+      "output": "2026/11/11 03:41:33.777, 5862, 6252, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:34.850+09:00",
+      "output": "2026/11/11 03:41:34.841, 5956, 6158, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:35.913+09:00",
+      "output": "2026/11/11 03:41:35.905, 5961, 6153, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:36.968+09:00",
+      "output": "2026/11/11 03:41:36.959, 5944, 6170, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:38.032+09:00",
+      "output": "2026/11/11 03:41:38.023, 5880, 6234, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:39.094+09:00",
+      "output": "2026/11/11 03:41:39.085, 5872, 6242, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:40.145+09:00",
+      "output": "2026/11/11 03:41:40.136, 5637, 6477, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:41.198+09:00",
+      "output": "2026/11/11 03:41:41.188, 5630, 6484, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:42.263+09:00",
+      "output": "2026/11/11 03:41:42.250, 5610, 6504, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:43.338+09:00",
+      "output": "2026/11/11 03:41:43.329, 5582, 6532, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:44.398+09:00",
+      "output": "2026/11/11 03:41:44.389, 5590, 6524, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:45.468+09:00",
+      "output": "2026/11/11 03:41:45.459, 5590, 6524, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:46.538+09:00",
+      "output": "2026/11/11 03:41:46.530, 5588, 6526, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:47.608+09:00",
+      "output": "2026/11/11 03:41:47.598, 5604, 6510, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:48.672+09:00",
+      "output": "2026/11/11 03:41:48.660, 5571, 6543, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:49.725+09:00",
+      "output": "2026/11/11 03:41:49.716, 5571, 6543, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:50.788+09:00",
+      "output": "2026/11/11 03:41:50.778, 5586, 6528, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:51.847+09:00",
+      "output": "2026/11/11 03:41:51.838, 5571, 6543, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:52.907+09:00",
+      "output": "2026/11/11 03:41:52.897, 5571, 6543, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:53.967+09:00",
+      "output": "2026/11/11 03:41:53.957, 5571, 6543, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:55.015+09:00",
+      "output": "2026/11/11 03:41:55.007, 5586, 6528, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:56.064+09:00",
+      "output": "2026/11/11 03:41:56.055, 5800, 6314, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:57.114+09:00",
+      "output": "2026/11/11 03:41:57.105, 5741, 6373, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:58.177+09:00",
+      "output": "2026/11/11 03:41:58.167, 5757, 6357, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:41:59.234+09:00",
+      "output": "2026/11/11 03:41:59.225, 5757, 6357, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:00.295+09:00",
+      "output": "2026/11/11 03:42:00.285, 5742, 6372, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:01.354+09:00",
+      "output": "2026/11/11 03:42:01.343, 5585, 6529, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:02.414+09:00",
+      "output": "2026/11/11 03:42:02.405, 5599, 6515, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:03.475+09:00",
+      "output": "2026/11/11 03:42:03.466, 5584, 6530, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:04.529+09:00",
+      "output": "2026/11/11 03:42:04.519, 5565, 6549, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:05.586+09:00",
+      "output": "2026/11/11 03:42:05.577, 5580, 6534, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:06.659+09:00",
+      "output": "2026/11/11 03:42:06.650, 5565, 6549, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:07.731+09:00",
+      "output": "2026/11/11 03:42:07.721, 5580, 6534, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:08.800+09:00",
+      "output": "2026/11/11 03:42:08.791, 5580, 6534, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:09.852+09:00",
+      "output": "2026/11/11 03:42:09.843, 5580, 6534, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:10.914+09:00",
+      "output": "2026/11/11 03:42:10.905, 5580, 6534, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:11.961+09:00",
+      "output": "2026/11/11 03:42:11.953, 5565, 6549, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:13.024+09:00",
+      "output": "2026/11/11 03:42:13.016, 5664, 6450, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:14.080+09:00",
+      "output": "2026/11/11 03:42:14.070, 5766, 6348, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:15.131+09:00",
+      "output": "2026/11/11 03:42:15.122, 5795, 6319, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:16.191+09:00",
+      "output": "2026/11/11 03:42:16.183, 5779, 6335, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:17.238+09:00",
+      "output": "2026/11/11 03:42:17.230, 5772, 6342, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:18.299+09:00",
+      "output": "2026/11/11 03:42:18.291, 5739, 6375, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:19.350+09:00",
+      "output": "2026/11/11 03:42:19.342, 5861, 6253, 12288, 90"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:20.397+09:00",
+      "output": "2026/11/11 03:42:20.389, 5845, 6269, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:21.478+09:00",
+      "output": "2026/11/11 03:42:21.469, 5903, 6211, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:22.538+09:00",
+      "output": "2026/11/11 03:42:22.529, 5891, 6223, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:23.607+09:00",
+      "output": "2026/11/11 03:42:23.594, 5863, 6251, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:24.683+09:00",
+      "output": "2026/11/11 03:42:24.674, 5908, 6206, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:25.744+09:00",
+      "output": "2026/11/11 03:42:25.734, 5854, 6260, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:26.803+09:00",
+      "output": "2026/11/11 03:42:26.795, 5870, 6244, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:27.855+09:00",
+      "output": "2026/11/11 03:42:27.846, 5883, 6231, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:28.920+09:00",
+      "output": "2026/11/11 03:42:28.910, 5885, 6229, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:29.975+09:00",
+      "output": "2026/11/11 03:42:29.966, 5892, 6222, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:31.043+09:00",
+      "output": "2026/11/11 03:42:31.034, 5891, 6223, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:32.092+09:00",
+      "output": "2026/11/11 03:42:32.082, 5533, 6581, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:33.135+09:00",
+      "output": "2026/11/11 03:42:33.127, 5585, 6529, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:34.206+09:00",
+      "output": "2026/11/11 03:42:34.195, 5652, 6462, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:35.263+09:00",
+      "output": "2026/11/11 03:42:35.254, 5840, 6274, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:36.330+09:00",
+      "output": "2026/11/11 03:42:36.320, 5937, 6177, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:37.384+09:00",
+      "output": "2026/11/11 03:42:37.375, 5926, 6188, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:38.435+09:00",
+      "output": "2026/11/11 03:42:38.427, 5920, 6194, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:39.495+09:00",
+      "output": "2026/11/11 03:42:39.484, 5902, 6212, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:40.563+09:00",
+      "output": "2026/11/11 03:42:40.554, 5737, 6377, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:41.617+09:00",
+      "output": "2026/11/11 03:42:41.608, 5567, 6547, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:42.670+09:00",
+      "output": "2026/11/11 03:42:42.661, 5622, 6492, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:43.732+09:00",
+      "output": "2026/11/11 03:42:43.722, 5613, 6501, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:44.808+09:00",
+      "output": "2026/11/11 03:42:44.799, 5613, 6501, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:45.858+09:00",
+      "output": "2026/11/11 03:42:45.848, 5733, 6381, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:46.905+09:00",
+      "output": "2026/11/11 03:42:46.897, 5796, 6318, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:47.960+09:00",
+      "output": "2026/11/11 03:42:47.952, 5846, 6268, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:49.020+09:00",
+      "output": "2026/11/11 03:42:49.011, 5822, 6292, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:50.080+09:00",
+      "output": "2026/11/11 03:42:50.070, 5736, 6378, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:51.144+09:00",
+      "output": "2026/11/11 03:42:51.134, 5872, 6242, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:52.197+09:00",
+      "output": "2026/11/11 03:42:52.187, 5864, 6250, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:53.249+09:00",
+      "output": "2026/11/11 03:42:53.241, 5885, 6229, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:54.304+09:00",
+      "output": "2026/11/11 03:42:54.295, 5913, 6201, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:55.357+09:00",
+      "output": "2026/11/11 03:42:55.348, 5907, 6207, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:56.406+09:00",
+      "output": "2026/11/11 03:42:56.398, 5791, 6323, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:57.468+09:00",
+      "output": "2026/11/11 03:42:57.458, 5760, 6354, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:58.540+09:00",
+      "output": "2026/11/11 03:42:58.532, 5759, 6355, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:42:59.603+09:00",
+      "output": "2026/11/11 03:42:59.593, 5689, 6425, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:00.665+09:00",
+      "output": "2026/11/11 03:43:00.657, 5608, 6506, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:01.719+09:00",
+      "output": "2026/11/11 03:43:01.708, 5588, 6526, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:02.775+09:00",
+      "output": "2026/11/11 03:43:02.766, 5595, 6519, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:03.822+09:00",
+      "output": "2026/11/11 03:43:03.813, 5568, 6546, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:04.877+09:00",
+      "output": "2026/11/11 03:43:04.869, 5560, 6554, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:05.937+09:00",
+      "output": "2026/11/11 03:43:05.927, 5560, 6554, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:06.995+09:00",
+      "output": "2026/11/11 03:43:06.986, 5560, 6554, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:08.051+09:00",
+      "output": "2026/11/11 03:43:08.042, 5560, 6554, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:09.113+09:00",
+      "output": "2026/11/11 03:43:09.104, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:10.182+09:00",
+      "output": "2026/11/11 03:43:10.174, 5560, 6554, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:11.249+09:00",
+      "output": "2026/11/11 03:43:11.240, 5575, 6539, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:12.323+09:00",
+      "output": "2026/11/11 03:43:12.314, 5575, 6539, 12288, 53"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:13.391+09:00",
+      "output": "2026/11/11 03:43:13.382, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:14.462+09:00",
+      "output": "2026/11/11 03:43:14.454, 5575, 6539, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:15.526+09:00",
+      "output": "2026/11/11 03:43:15.515, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:16.580+09:00",
+      "output": "2026/11/11 03:43:16.570, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:17.641+09:00",
+      "output": "2026/11/11 03:43:17.632, 5560, 6554, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:18.691+09:00",
+      "output": "2026/11/11 03:43:18.681, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:19.753+09:00",
+      "output": "2026/11/11 03:43:19.744, 5560, 6554, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:20.823+09:00",
+      "output": "2026/11/11 03:43:20.814, 5560, 6554, 12288, 8"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:21.891+09:00",
+      "output": "2026/11/11 03:43:21.882, 5560, 6554, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:22.939+09:00",
+      "output": "2026/11/11 03:43:22.931, 5559, 6555, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:24.004+09:00",
+      "output": "2026/11/11 03:43:23.995, 5559, 6555, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:25.061+09:00",
+      "output": "2026/11/11 03:43:25.052, 5559, 6555, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:26.122+09:00",
+      "output": "2026/11/11 03:43:26.113, 5559, 6555, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:27.176+09:00",
+      "output": "2026/11/11 03:43:27.167, 5559, 6555, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:28.253+09:00",
+      "output": "2026/11/11 03:43:28.245, 5558, 6556, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:29.317+09:00",
+      "output": "2026/11/11 03:43:29.309, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:30.377+09:00",
+      "output": "2026/11/11 03:43:30.368, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:31.442+09:00",
+      "output": "2026/11/11 03:43:31.433, 5558, 6556, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:32.496+09:00",
+      "output": "2026/11/11 03:43:32.488, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:33.559+09:00",
+      "output": "2026/11/11 03:43:33.549, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:34.631+09:00",
+      "output": "2026/11/11 03:43:34.623, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:35.689+09:00",
+      "output": "2026/11/11 03:43:35.680, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:36.752+09:00",
+      "output": "2026/11/11 03:43:36.743, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:37.830+09:00",
+      "output": "2026/11/11 03:43:37.820, 5558, 6556, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:38.900+09:00",
+      "output": "2026/11/11 03:43:38.891, 5558, 6556, 12288, 24"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:39.961+09:00",
+      "output": "2026/11/11 03:43:39.951, 5558, 6556, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:41.016+09:00",
+      "output": "2026/11/11 03:43:41.007, 5558, 6556, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:42.078+09:00",
+      "output": "2026/11/11 03:43:42.070, 5558, 6556, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:43.132+09:00",
+      "output": "2026/11/11 03:43:43.123, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:44.191+09:00",
+      "output": "2026/11/11 03:43:44.181, 5558, 6556, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:45.246+09:00",
+      "output": "2026/11/11 03:43:45.236, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:46.302+09:00",
+      "output": "2026/11/11 03:43:46.293, 5558, 6556, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:47.367+09:00",
+      "output": "2026/11/11 03:43:47.356, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:48.423+09:00",
+      "output": "2026/11/11 03:43:48.411, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:49.493+09:00",
+      "output": "2026/11/11 03:43:49.484, 5558, 6556, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:50.567+09:00",
+      "output": "2026/11/11 03:43:50.558, 5558, 6556, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:51.620+09:00",
+      "output": "2026/11/11 03:43:51.611, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:52.676+09:00",
+      "output": "2026/11/11 03:43:52.666, 5558, 6556, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:53.733+09:00",
+      "output": "2026/11/11 03:43:53.724, 5558, 6556, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:54.794+09:00",
+      "output": "2026/11/11 03:43:54.785, 5558, 6556, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:55.865+09:00",
+      "output": "2026/11/11 03:43:55.856, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:56.919+09:00",
+      "output": "2026/11/11 03:43:56.910, 5549, 6565, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:57.978+09:00",
+      "output": "2026/11/11 03:43:57.967, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:43:59.036+09:00",
+      "output": "2026/11/11 03:43:59.027, 5549, 6565, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:00.101+09:00",
+      "output": "2026/11/11 03:44:00.092, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:01.166+09:00",
+      "output": "2026/11/11 03:44:01.156, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:02.234+09:00",
+      "output": "2026/11/11 03:44:02.226, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:03.302+09:00",
+      "output": "2026/11/11 03:44:03.292, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:04.367+09:00",
+      "output": "2026/11/11 03:44:04.358, 5549, 6565, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:05.435+09:00",
+      "output": "2026/11/11 03:44:05.426, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:06.489+09:00",
+      "output": "2026/11/11 03:44:06.479, 5549, 6565, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:07.548+09:00",
+      "output": "2026/11/11 03:44:07.539, 5549, 6565, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:08.601+09:00",
+      "output": "2026/11/11 03:44:08.592, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:09.648+09:00",
+      "output": "2026/11/11 03:44:09.639, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:10.708+09:00",
+      "output": "2026/11/11 03:44:10.699, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:11.773+09:00",
+      "output": "2026/11/11 03:44:11.765, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:12.835+09:00",
+      "output": "2026/11/11 03:44:12.825, 5549, 6565, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:13.896+09:00",
+      "output": "2026/11/11 03:44:13.886, 5549, 6565, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:14.947+09:00",
+      "output": "2026/11/11 03:44:14.939, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:16.007+09:00",
+      "output": "2026/11/11 03:44:15.998, 5549, 6565, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:17.059+09:00",
+      "output": "2026/11/11 03:44:17.048, 5549, 6565, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:18.107+09:00",
+      "output": "2026/11/11 03:44:18.097, 5564, 6550, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:19.155+09:00",
+      "output": "2026/11/11 03:44:19.145, 5549, 6565, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:20.227+09:00",
+      "output": "2026/11/11 03:44:20.217, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:21.287+09:00",
+      "output": "2026/11/11 03:44:21.278, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:22.351+09:00",
+      "output": "2026/11/11 03:44:22.340, 5549, 6565, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:23.402+09:00",
+      "output": "2026/11/11 03:44:23.393, 5639, 6475, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:24.461+09:00",
+      "output": "2026/11/11 03:44:24.452, 5639, 6475, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:25.525+09:00",
+      "output": "2026/11/11 03:44:25.516, 5639, 6475, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:26.593+09:00",
+      "output": "2026/11/11 03:44:26.583, 5639, 6475, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:27.654+09:00",
+      "output": "2026/11/11 03:44:27.646, 5639, 6475, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:28.710+09:00",
+      "output": "2026/11/11 03:44:28.702, 5550, 6564, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:29.774+09:00",
+      "output": "2026/11/11 03:44:29.766, 5550, 6564, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:30.830+09:00",
+      "output": "2026/11/11 03:44:30.821, 5550, 6564, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:31.903+09:00",
+      "output": "2026/11/11 03:44:31.894, 5550, 6564, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:32.968+09:00",
+      "output": "2026/11/11 03:44:32.958, 5428, 6686, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:34.033+09:00",
+      "output": "2026/11/11 03:44:34.023, 5365, 6749, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:35.093+09:00",
+      "output": "2026/11/11 03:44:35.083, 5365, 6749, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:36.148+09:00",
+      "output": "2026/11/11 03:44:36.139, 5365, 6749, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:37.218+09:00",
+      "output": "2026/11/11 03:44:37.207, 5365, 6749, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:38.280+09:00",
+      "output": "2026/11/11 03:44:38.271, 5365, 6749, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:39.352+09:00",
+      "output": "2026/11/11 03:44:39.342, 5365, 6749, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:40.421+09:00",
+      "output": "2026/11/11 03:44:40.412, 5365, 6749, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:41.483+09:00",
+      "output": "2026/11/11 03:44:41.475, 5370, 6744, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:42.550+09:00",
+      "output": "2026/11/11 03:44:42.540, 5370, 6744, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:43.606+09:00",
+      "output": "2026/11/11 03:44:43.598, 5366, 6748, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:44.670+09:00",
+      "output": "2026/11/11 03:44:44.660, 5366, 6748, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:45.725+09:00",
+      "output": "2026/11/11 03:44:45.715, 5366, 6748, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:46.786+09:00",
+      "output": "2026/11/11 03:44:46.778, 5366, 6748, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:47.852+09:00",
+      "output": "2026/11/11 03:44:47.843, 5366, 6748, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:48.910+09:00",
+      "output": "2026/11/11 03:44:48.901, 5366, 6748, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:49.960+09:00",
+      "output": "2026/11/11 03:44:49.951, 5366, 6748, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:51.010+09:00",
+      "output": "2026/11/11 03:44:51.000, 5366, 6748, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:52.060+09:00",
+      "output": "2026/11/11 03:44:52.051, 5366, 6748, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:53.123+09:00",
+      "output": "2026/11/11 03:44:53.112, 5366, 6748, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:54.176+09:00",
+      "output": "2026/11/11 03:44:54.167, 5377, 6737, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:55.239+09:00",
+      "output": "2026/11/11 03:44:55.229, 5378, 6736, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:56.301+09:00",
+      "output": "2026/11/11 03:44:56.291, 5378, 6736, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:57.347+09:00",
+      "output": "2026/11/11 03:44:57.338, 5378, 6736, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:58.400+09:00",
+      "output": "2026/11/11 03:44:58.391, 5371, 6743, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:44:59.448+09:00",
+      "output": "2026/11/11 03:44:59.440, 5370, 6744, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:00.497+09:00",
+      "output": "2026/11/11 03:45:00.487, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:01.550+09:00",
+      "output": "2026/11/11 03:45:01.541, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:02.608+09:00",
+      "output": "2026/11/11 03:45:02.598, 5329, 6785, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:03.663+09:00",
+      "output": "2026/11/11 03:45:03.654, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:04.721+09:00",
+      "output": "2026/11/11 03:45:04.711, 5329, 6785, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:05.796+09:00",
+      "output": "2026/11/11 03:45:05.786, 5329, 6785, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:06.851+09:00",
+      "output": "2026/11/11 03:45:06.843, 5329, 6785, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:07.918+09:00",
+      "output": "2026/11/11 03:45:07.909, 5329, 6785, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:08.975+09:00",
+      "output": "2026/11/11 03:45:08.965, 5329, 6785, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:10.047+09:00",
+      "output": "2026/11/11 03:45:10.038, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:11.112+09:00",
+      "output": "2026/11/11 03:45:11.103, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:12.176+09:00",
+      "output": "2026/11/11 03:45:12.166, 5329, 6785, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:13.240+09:00",
+      "output": "2026/11/11 03:45:13.232, 5329, 6785, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:14.300+09:00",
+      "output": "2026/11/11 03:45:14.291, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:15.350+09:00",
+      "output": "2026/11/11 03:45:15.342, 5329, 6785, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:16.407+09:00",
+      "output": "2026/11/11 03:45:16.399, 5329, 6785, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:17.467+09:00",
+      "output": "2026/11/11 03:45:17.458, 5329, 6785, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:18.531+09:00",
+      "output": "2026/11/11 03:45:18.521, 5329, 6785, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:19.599+09:00",
+      "output": "2026/11/11 03:45:19.591, 5344, 6770, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:20.651+09:00",
+      "output": "2026/11/11 03:45:20.642, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:21.716+09:00",
+      "output": "2026/11/11 03:45:21.708, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:22.768+09:00",
+      "output": "2026/11/11 03:45:22.759, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:23.824+09:00",
+      "output": "2026/11/11 03:45:23.814, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:24.873+09:00",
+      "output": "2026/11/11 03:45:24.864, 5328, 6786, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:25.927+09:00",
+      "output": "2026/11/11 03:45:25.918, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:26.978+09:00",
+      "output": "2026/11/11 03:45:26.968, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:28.050+09:00",
+      "output": "2026/11/11 03:45:28.041, 5328, 6786, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:29.099+09:00",
+      "output": "2026/11/11 03:45:29.090, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:30.157+09:00",
+      "output": "2026/11/11 03:45:30.148, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:31.207+09:00",
+      "output": "2026/11/11 03:45:31.199, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:32.256+09:00",
+      "output": "2026/11/11 03:45:32.246, 5343, 6771, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:33.322+09:00",
+      "output": "2026/11/11 03:45:33.313, 5343, 6771, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:34.391+09:00",
+      "output": "2026/11/11 03:45:34.382, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:35.440+09:00",
+      "output": "2026/11/11 03:45:35.430, 5328, 6786, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:36.505+09:00",
+      "output": "2026/11/11 03:45:36.497, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:37.565+09:00",
+      "output": "2026/11/11 03:45:37.557, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:38.640+09:00",
+      "output": "2026/11/11 03:45:38.632, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:39.712+09:00",
+      "output": "2026/11/11 03:45:39.702, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:40.780+09:00",
+      "output": "2026/11/11 03:45:40.770, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:41.836+09:00",
+      "output": "2026/11/11 03:45:41.826, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:42.892+09:00",
+      "output": "2026/11/11 03:45:42.881, 5328, 6786, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:43.954+09:00",
+      "output": "2026/11/11 03:45:43.945, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:45.022+09:00",
+      "output": "2026/11/11 03:45:45.013, 5328, 6786, 12288, 47"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:46.086+09:00",
+      "output": "2026/11/11 03:45:46.078, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:47.141+09:00",
+      "output": "2026/11/11 03:45:47.132, 5328, 6786, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:48.205+09:00",
+      "output": "2026/11/11 03:45:48.197, 5328, 6786, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:49.267+09:00",
+      "output": "2026/11/11 03:45:49.257, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:50.330+09:00",
+      "output": "2026/11/11 03:45:50.321, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:51.391+09:00",
+      "output": "2026/11/11 03:45:51.381, 5328, 6786, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:52.444+09:00",
+      "output": "2026/11/11 03:45:52.435, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:53.501+09:00",
+      "output": "2026/11/11 03:45:53.493, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:54.572+09:00",
+      "output": "2026/11/11 03:45:54.562, 5343, 6771, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:55.634+09:00",
+      "output": "2026/11/11 03:45:55.624, 5343, 6771, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:56.689+09:00",
+      "output": "2026/11/11 03:45:56.680, 5328, 6786, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:57.738+09:00",
+      "output": "2026/11/11 03:45:57.729, 5328, 6786, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:58.799+09:00",
+      "output": "2026/11/11 03:45:58.791, 5327, 6787, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:45:59.864+09:00",
+      "output": "2026/11/11 03:45:59.857, 5327, 6787, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:00.926+09:00",
+      "output": "2026/11/11 03:46:00.917, 5327, 6787, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:01.982+09:00",
+      "output": "2026/11/11 03:46:01.973, 5327, 6787, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:03.042+09:00",
+      "output": "2026/11/11 03:46:03.034, 5327, 6787, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:04.086+09:00",
+      "output": "2026/11/11 03:46:04.078, 5327, 6787, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:05.138+09:00",
+      "output": "2026/11/11 03:46:05.128, 5327, 6787, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:06.186+09:00",
+      "output": "2026/11/11 03:46:06.178, 5327, 6787, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:07.241+09:00",
+      "output": "2026/11/11 03:46:07.232, 5342, 6772, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:08.300+09:00",
+      "output": "2026/11/11 03:46:08.291, 5327, 6787, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:09.351+09:00",
+      "output": "2026/11/11 03:46:09.341, 5342, 6772, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:10.414+09:00",
+      "output": "2026/11/11 03:46:10.405, 5342, 6772, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:11.461+09:00",
+      "output": "2026/11/11 03:46:11.452, 5327, 6787, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:12.537+09:00",
+      "output": "2026/11/11 03:46:12.527, 5342, 6772, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:13.594+09:00",
+      "output": "2026/11/11 03:46:13.583, 5336, 6778, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:14.657+09:00",
+      "output": "2026/11/11 03:46:14.647, 5336, 6778, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:15.776+09:00",
+      "output": "2026/11/11 03:46:15.760, 5336, 6778, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:16.910+09:00",
+      "output": "2026/11/11 03:46:16.883, 5336, 6778, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:18.001+09:00",
+      "output": "2026/11/11 03:46:17.987, 5336, 6778, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:19.139+09:00",
+      "output": "2026/11/11 03:46:19.117, 5335, 6779, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:20.312+09:00",
+      "output": "2026/11/11 03:46:20.273, 5394, 6720, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:21.436+09:00",
+      "output": "2026/11/11 03:46:21.419, 5394, 6720, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:22.568+09:00",
+      "output": "2026/11/11 03:46:22.550, 5394, 6720, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:23.669+09:00",
+      "output": "2026/11/11 03:46:23.658, 5394, 6720, 12288, 1"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:24.770+09:00",
+      "output": "2026/11/11 03:46:24.759, 5394, 6720, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:25.906+09:00",
+      "output": "2026/11/11 03:46:25.888, 5380, 6734, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:27.018+09:00",
+      "output": "2026/11/11 03:46:27.003, 5345, 6769, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:28.110+09:00",
+      "output": "2026/11/11 03:46:28.098, 5337, 6777, 12288, 82"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:29.168+09:00",
+      "output": "2026/11/11 03:46:29.159, 5337, 6777, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:30.227+09:00",
+      "output": "2026/11/11 03:46:30.219, 5337, 6777, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:31.289+09:00",
+      "output": "2026/11/11 03:46:31.280, 5352, 6762, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:32.338+09:00",
+      "output": "2026/11/11 03:46:32.330, 5337, 6777, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:33.399+09:00",
+      "output": "2026/11/11 03:46:33.389, 5337, 6777, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:34.475+09:00",
+      "output": "2026/11/11 03:46:34.466, 5337, 6777, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:35.524+09:00",
+      "output": "2026/11/11 03:46:35.516, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:36.572+09:00",
+      "output": "2026/11/11 03:46:36.562, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:37.637+09:00",
+      "output": "2026/11/11 03:46:37.627, 5337, 6777, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:38.683+09:00",
+      "output": "2026/11/11 03:46:38.674, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:39.735+09:00",
+      "output": "2026/11/11 03:46:39.724, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:40.794+09:00",
+      "output": "2026/11/11 03:46:40.786, 5352, 6762, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:41.857+09:00",
+      "output": "2026/11/11 03:46:41.848, 5337, 6777, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:42.919+09:00",
+      "output": "2026/11/11 03:46:42.909, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:43.979+09:00",
+      "output": "2026/11/11 03:46:43.969, 5337, 6777, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:45.029+09:00",
+      "output": "2026/11/11 03:46:45.020, 5352, 6762, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:46.085+09:00",
+      "output": "2026/11/11 03:46:46.076, 5337, 6777, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:47.135+09:00",
+      "output": "2026/11/11 03:46:47.126, 5367, 6747, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:48.189+09:00",
+      "output": "2026/11/11 03:46:48.180, 5352, 6762, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:49.251+09:00",
+      "output": "2026/11/11 03:46:49.242, 5352, 6762, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:50.308+09:00",
+      "output": "2026/11/11 03:46:50.299, 5352, 6762, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:51.350+09:00",
+      "output": "2026/11/11 03:46:51.342, 5352, 6762, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:52.414+09:00",
+      "output": "2026/11/11 03:46:52.405, 5337, 6777, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:53.469+09:00",
+      "output": "2026/11/11 03:46:53.459, 5337, 6777, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:54.516+09:00",
+      "output": "2026/11/11 03:46:54.507, 5337, 6777, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:55.578+09:00",
+      "output": "2026/11/11 03:46:55.569, 5337, 6777, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:56.632+09:00",
+      "output": "2026/11/11 03:46:56.624, 5340, 6774, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:57.684+09:00",
+      "output": "2026/11/11 03:46:57.676, 5340, 6774, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:58.752+09:00",
+      "output": "2026/11/11 03:46:58.743, 5336, 6778, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:46:59.814+09:00",
+      "output": "2026/11/11 03:46:59.805, 5336, 6778, 12288, 81"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:00.869+09:00",
+      "output": "2026/11/11 03:47:00.860, 5336, 6778, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:01.933+09:00",
+      "output": "2026/11/11 03:47:01.923, 5336, 6778, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:02.995+09:00",
+      "output": "2026/11/11 03:47:02.987, 5348, 6766, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:04.051+09:00",
+      "output": "2026/11/11 03:47:04.042, 5348, 6766, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:05.120+09:00",
+      "output": "2026/11/11 03:47:05.110, 5348, 6766, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:06.181+09:00",
+      "output": "2026/11/11 03:47:06.172, 5340, 6774, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:07.238+09:00",
+      "output": "2026/11/11 03:47:07.229, 5340, 6774, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:08.301+09:00",
+      "output": "2026/11/11 03:47:08.291, 5426, 6688, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:09.364+09:00",
+      "output": "2026/11/11 03:47:09.353, 5432, 6682, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:10.428+09:00",
+      "output": "2026/11/11 03:47:10.416, 5432, 6682, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:11.497+09:00",
+      "output": "2026/11/11 03:47:11.488, 5433, 6681, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:12.549+09:00",
+      "output": "2026/11/11 03:47:12.541, 5436, 6678, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:13.620+09:00",
+      "output": "2026/11/11 03:47:13.610, 5395, 6719, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:14.667+09:00",
+      "output": "2026/11/11 03:47:14.659, 5387, 6727, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:15.713+09:00",
+      "output": "2026/11/11 03:47:15.705, 5387, 6727, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:16.770+09:00",
+      "output": "2026/11/11 03:47:16.761, 5379, 6735, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:17.819+09:00",
+      "output": "2026/11/11 03:47:17.809, 5343, 6771, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:18.892+09:00",
+      "output": "2026/11/11 03:47:18.881, 5351, 6763, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:19.954+09:00",
+      "output": "2026/11/11 03:47:19.946, 5336, 6778, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:21.015+09:00",
+      "output": "2026/11/11 03:47:21.006, 5351, 6763, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:22.086+09:00",
+      "output": "2026/11/11 03:47:22.077, 5351, 6763, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:23.137+09:00",
+      "output": "2026/11/11 03:47:23.129, 5336, 6778, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:24.195+09:00",
+      "output": "2026/11/11 03:47:24.187, 5336, 6778, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:25.251+09:00",
+      "output": "2026/11/11 03:47:25.242, 5351, 6763, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:26.302+09:00",
+      "output": "2026/11/11 03:47:26.293, 5351, 6763, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:27.371+09:00",
+      "output": "2026/11/11 03:47:27.362, 5351, 6763, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:28.427+09:00",
+      "output": "2026/11/11 03:47:28.417, 5351, 6763, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:29.490+09:00",
+      "output": "2026/11/11 03:47:29.480, 5336, 6778, 12288, 84"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:30.561+09:00",
+      "output": "2026/11/11 03:47:30.552, 5351, 6763, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:31.621+09:00",
+      "output": "2026/11/11 03:47:31.612, 5351, 6763, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:32.668+09:00",
+      "output": "2026/11/11 03:47:32.659, 5351, 6763, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:33.716+09:00",
+      "output": "2026/11/11 03:47:33.707, 5351, 6763, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:34.772+09:00",
+      "output": "2026/11/11 03:47:34.763, 5351, 6763, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:35.834+09:00",
+      "output": "2026/11/11 03:47:35.825, 5351, 6763, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:36.896+09:00",
+      "output": "2026/11/11 03:47:36.885, 5336, 6778, 12288, 83"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:37.948+09:00",
+      "output": "2026/11/11 03:47:37.939, 5557, 6557, 12288, 86"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:39.011+09:00",
+      "output": "2026/11/11 03:47:39.002, 5605, 6509, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:40.060+09:00",
+      "output": "2026/11/11 03:47:40.051, 5586, 6528, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:41.123+09:00",
+      "output": "2026/11/11 03:47:41.113, 5580, 6534, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:42.181+09:00",
+      "output": "2026/11/11 03:47:42.173, 5676, 6438, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:43.245+09:00",
+      "output": "2026/11/11 03:47:43.236, 5633, 6481, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:44.295+09:00",
+      "output": "2026/11/11 03:47:44.286, 5617, 6497, 12288, 85"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:45.350+09:00",
+      "output": "2026/11/11 03:47:45.339, 5639, 6475, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:46.402+09:00",
+      "output": "2026/11/11 03:47:46.391, 5575, 6539, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:47.461+09:00",
+      "output": "2026/11/11 03:47:47.452, 5609, 6505, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:48.529+09:00",
+      "output": "2026/11/11 03:47:48.519, 5612, 6502, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:49.577+09:00",
+      "output": "2026/11/11 03:47:49.568, 5647, 6467, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:50.633+09:00",
+      "output": "2026/11/11 03:47:50.623, 5603, 6511, 12288, 91"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:51.683+09:00",
+      "output": "2026/11/11 03:47:51.674, 5647, 6467, 12288, 89"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:52.742+09:00",
+      "output": "2026/11/11 03:47:52.732, 5679, 6435, 12288, 88"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:53.795+09:00",
+      "output": "2026/11/11 03:47:53.785, 5692, 6422, 12288, 87"
+    },
+    {
+      "timestamp": "2026-11-11T03:47:54.868+09:00",
+      "output": "2026/11/11 03:47:54.858, 5713, 6401, 12288, 89"
+    }
+  ],
+  "final_memory": {
+    "total_gib": 15.81,
+    "free_gib": 0.49,
+    "load_percent": 96
+  },
+  "final_gpu": {
+    "timestamp": "2026-11-11T03:47:55.889+09:00",
+    "exit_code": 0,
+    "output": "2026/11/11 03:47:55.881, 5663, 6451, 12288, 87",
+    "error": null
+  },
+  "ollama_ps": "NAME                 ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen3.5:4b-q4_K_M    d8b0f5e9760c    3.1 GB    100% GPU     4096       llamacpp    4 minutes from now    \n",
+  "model_metadata": {
+    "name": "qwen3.5:4b-q4_K_M",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "size_bytes": 3324173934,
+    "format": "gguf",
+    "parameter_size": "4.2B",
+    "quantization_level": "Q4_K_M",
+    "context_length_metadata": 262144,
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ],
+    "license": "Apache License 2.0"
+  },
+  "measured_summary": {
+    "cli_runs": 12,
+    "cli_exit_zero": 12,
+    "cli_final_marker_missing": 1,
+    "cli_wall_avg_ms": 30524.8,
+    "api_runs": 12,
+    "api_http_200": 12,
+    "api_done_reason_length": 1,
+    "api_wall_avg_ms": 23608.4,
+    "api_wall_median_ms": 18296.0,
+    "api_eval_tokens_per_second_avg": 76.66,
+    "api_eval_count_min_max": [
+      468,
+      4070
+    ],
+    "gpu_samples": 614,
+    "gpu_used_mib_min_max": [
+      1841,
+      5961
+    ],
+    "gpu_util_percent_min_max": [
+      0,
+      91
+    ],
+    "system_free_gib_min_max": [
+      0.48,
+      3.24
+    ]
+  }
+}

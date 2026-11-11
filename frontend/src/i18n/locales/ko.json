@@ -1,0 +1,18 @@
+{
+  "app": {
+    "name": "P.P. AI - LUMORA",
+    "description": "로컬 우선 개인형 AI 플랫폼 개발 기반입니다."
+  },
+  "chat": {
+    "title": "대화",
+    "history": "이전 대화",
+    "newConversation": "새 대화",
+    "empty": "생일 정보를 저장하거나 조회해 보세요.",
+    "processing": "로컬 AI가 요청을 처리하고 있습니다...",
+    "messageLabel": "메시지",
+    "placeholder": "예: 홍길동의 생일은 5월 10일이야",
+    "send": "전송",
+    "sendFailed": "요청을 처리하지 못했습니다. 잠시 후 다시 시도해 주세요.",
+    "historyUnavailable": "대화 목록을 불러오지 못했습니다."
+  }
+}

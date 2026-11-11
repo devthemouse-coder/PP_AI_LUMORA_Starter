@@ -1,0 +1,36 @@
+@baseUrl = http://127.0.0.1:5080
+@conversationId = 00000000-0000-0000-0000-000000000001
+
+### 생일 저장 또는 새 대화 시작
+POST {{baseUrl}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "합성 대상 홍길동의 생일은 5월 10일이야",
+  "language": "ko"
+}
+
+### 기존 대화에서 이어서 질문
+POST {{baseUrl}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "이번 달 생일자를 알려줘",
+  "language": "ko",
+  "conversationId": "{{conversationId}}"
+}
+
+### 대화 목록
+GET {{baseUrl}}/api/conversations?pageNumber=1&pageSize=50
+
+### 대화 메시지 기록
+GET {{baseUrl}}/api/conversations/{{conversationId}}/messages?pageNumber=1&pageSize=50
+
+### 모델 의도에 없는 작업은 fact 변경 없이 거절
+POST {{baseUrl}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "합성 대상 정보를 삭제해줘",
+  "language": "ko"
+}
